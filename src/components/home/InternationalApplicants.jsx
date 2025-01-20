@@ -22,7 +22,7 @@ const InternationalApplicants = () => {
           </p>
 
           {/* Degree Programs */}
-          <div className="bg-white rounded-lg p-4 lg:p-6 text-black shadow-lg">
+          <div className="bg-white rounded-lg p-4 lg:p-4 text-black shadow-lg">
             <h2 className="text-xl font-semibold mb-8 text-center">
             The Faculty on Training Foreign Students and Postgraduates is in charge of international students training in the following specialist degree programs
             </h2>

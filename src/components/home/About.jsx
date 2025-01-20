@@ -20,33 +20,33 @@ const About = () => {
               of medicine.
             </p>
 
-            <div className="text-gray-700 space-y-4">
-              <p className="text-lg px-4">
+            <div className="text-gray-700 text-center lg:text-left space-y-4">
+              <p className="text-lg px-4 lg:px-0">
                 RSMU is equipped with modern laboratories, simulation centers,
                 and training facilities that allow students to gain practical
                 skills and study medicine with the help of advanced technologies.
               </p>
-              <p className="text-lg px-4">
+              <p className="text-lg px-4 lg:px-0">
                 RSMU provides students with the opportunity to participate in
                 international exchange programs, to undergo internships in leading
                 clinics of Russia and the world. The University supports young
                 researchers and provides them with the opportunity to engage in
                 scientific activities.
               </p>
-              <p className="text-lg px-4">
+              <p className="text-lg px-4 lg:px-0">
                 Modern infrastructure: comfortable classrooms, laboratories,
                 libraries, gyms, dormitories - everything is created for
                 comfortable study and life of students.
               </p>
             </div>
 
-            <h2 className="text-xl font-semibold mt-8 text-center lg:text-left">
+            <h2 className="text-xl font-semibold mt-8 px-4 lg:px-0 text-center lg:text-left">
               The choice of RSMU is a choice of the future, where you can realize
               your potential, get quality education, and become a demanded
               specialist in the field of health care.
             </h2>
 
-            <ul className="mt-6 space-y-2 text-lg">
+            <ul className="mt-6 space-y-2 px-4 lg:px-0 text-lg">
               <li className="flex items-center">
                 <span className="text-green-500 mr-2">✔️</span> RSMU is amongst
                 the top universities of the Russian Federation

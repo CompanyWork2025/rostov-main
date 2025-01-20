@@ -62,7 +62,7 @@ const ContactForm = () => {
         </form>
       </div>
       <div className="w-full md:w-1/2 p-4 flex justify-center">
-        <div className="rounded-full overflow-hidden w-[35rem] h-[35rem]">
+        <div className="rounded-full overflow-hidden w-[35rem] h-[20rem] lg:w-[35rem] lg:h-[35rem]">
           {/* Embedded Google Map for the specific location */}
           <iframe
             className="w-[35rem] h-[35rem]"
