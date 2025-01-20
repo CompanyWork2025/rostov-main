@@ -1,0 +1,151 @@
+import React from 'react';
+
+const Steps = () => {
+    return (
+        <div
+            className="relative bg-cover bg-center h-auto z-10"
+            style={{
+                backgroundImage:
+                    "url('https://images.unsplash.com/photo-1530293959042-0aac487c21e3?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bGlnaHQlMjBibHVlJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D')",
+            }}
+        >
+            <div className="grid grid-cols-1 md:grid-cols-1 gap-6 px-4 sm:px-6 md:px-20">
+                {/* Step 1 */}
+                <div className="flex flex-col sm:flex-row items-center space-x-4 p-4 sm:p-6 lg:p-12 border border-2 bg-white rounded-md shadow-lg">
+                    <div className="flex-shrink-0 order-1 sm:order-0">
+                        <img
+                            src="https://png.pngtree.com/png-vector/20240628/ourmid/pngtree-simple-emoji-of-someone-teaching-computer-software-png-image_12780864.png"
+                            alt="Step 1"
+                            className="w-40 mt-4 lg:mt-0 h-40 lg:w-64 lg:h-64 object-cover"
+                        />
+                    </div>
+                    <div className="flex flex-col order-0 sm:order-1">
+                        <h3 className="text-xl font-semibold mb-4">Step 1 — Initial application</h3>
+                        <p className="text-gray-600 text-sm sm:text-base">
+                            <br />
+                            Eligibility Criteria:
+                            <br />
+                            <br />
+                            * Health: If you have a serious medical illness or chronic medical condition, please contact University officials before arrival.
+                            English Level: To study at RSMU, there is no need to provide an English language certificate. However, applicants with poor English skills may not be eligible for studies.
+                            <br />
+                            <br />
+                            You need to prepare and send the following documents via email or the form below:
+                            <br />
+                            <br />
+                            1. Copy of the international passport (pages with the photo, date of expiration, place of birth, etc.)
+                            <br />
+                            <br />
+                            2. Documents confirming your previous level of education.
+                            <br />
+                            <br />
+                            3. Health fitness certificate (including vaccination information).
+                            <br />
+                            <br />
+                            Please fill out the following forms: visa invitation inquiry form and application form, and send them via the form below or email to the University’s admission office: admission@rostgmu.ru
+                        </p>
+                    </div>
+                </div>
+
+                {/* Step 2 */}
+                <div className="flex flex-col sm:flex-row items-center space-x-4 p-4 sm:p-6 lg:p-12 bg-white border border-2 rounded-md shadow-lg">
+                    <div className="flex-shrink-0 order-1 sm:order-0">
+                        <img
+                            src="https://imgproxy.attic.sh/unsafe/rs:fit:768:768:1:1/t:1:FF00FF:false:false/pngo:false:true:256/aHR0cHM6Ly9hdHRp/Yy5zaC8yYjB3dXJu/eTJiNWpmd3Fjamsx/YmxodHZpNTV6.png"
+                            alt="Step 2"
+                            className="w-40 mt-4 lg:mt-0 h-40 lg:w-64 lg:h-64 object-cover"
+                        />
+                    </div>
+                    <div className="flex flex-col order-0 sm:order-1">
+                        <h3 className="text-xl font-semibold mb-4">Step 2 — Receive a student's invitation (takes about 30 days) and apply for visa</h3>
+                        <p className="text-gray-600 text-sm sm:text-base">
+                            After your application is processed, you will receive a student's invitation in about 30 days via email. Once you receive your invitation, you can apply for a visa to enter Russia.
+                            <br /><br />
+                            Note: Receiving the invitation is not enough to enter Russia. The visa approval process is essential.
+                        </p>
+                    </div>
+                </div>
+
+                {/* Step 3 */}
+                <div className="flex flex-col sm:flex-row items-center space-x-4 p-4 sm:p-6 lg:p-12 bg-white border border-2 rounded-md shadow-lg">
+                    <div className="flex-shrink-0 order-1 sm:order-0">
+                        <img
+                            src="https://static.vecteezy.com/system/resources/previews/047/492/159/non_2x/a-exciting-happy-man-3d-photo-free-png.png"
+                            alt="Step 3"
+                            className="w-40 mt-4 lg:mt-0 h-40 lg:w-64 lg:h-64 object-cover"
+                        />
+                    </div>
+                    <div className="flex flex-col order-0 sm:order-1">
+                        <h3 className="text-xl font-semibold mb-4">Step 3 — Arrival in Russia</h3>
+                        <p className="text-gray-600 text-sm sm:text-base">
+                            Upon your arrival in Russia, make sure to complete the migration card provided at the airport and have it stamped by Border Control.
+                            <br /><br />
+                            You need to submit your migration card to the university officials as proof of entry. 
+                            <br /><br />
+                            Visit the Foreign Students Office on the day or next day of arrival, bringing your passport and migration card. Additionally, complete the registration within 3 days to avoid fines.
+                        </p>
+                    </div>
+                </div>
+
+                {/* Step 4 */}
+                <div className="flex flex-col sm:flex-row items-center space-x-4 p-4 sm:p-6 lg:p-12 bg-white border border-2 rounded-md shadow-lg">
+                    <div className="flex-shrink-0 order-1 sm:order-0">
+                        <img
+                            src="https://imgproxy.attic.sh/unsafe/rs:fit:768:768:1:1/t:1:FF00FF:false:false/pngo:false:true:256/aHR0cHM6Ly9hdHRp/Yy5zaC9jM245dmJ3/dTk1ZG10dGI4cWE4/NDhsbWJzNXZo.png"
+                            alt="Step 4"
+                            className="w-40 mt-4 lg:mt-0 h-40 lg:w-64 lg:h-64 object-cover"
+                        />
+                    </div>
+                    <div className="flex flex-col order-0 sm:order-1">
+                        <h3 className="text-xl font-semibold mb-4">Step 4 — Medical check-up & vaccinations</h3>
+                        <p className="text-gray-600 text-sm sm:text-base">
+                            Upon your arrival, you will undergo a medical check-up to assess your fitness for study. This will cost around 4000 RUB.
+                            <br /><br />
+                            If any vaccinations are missed, you will need to get the required vaccines.
+                            <br /><br />
+                            Note: All international students must have health insurance, which costs approximately 4500 RUB annually.
+                        </p>
+                    </div>
+                </div>
+
+                {/* Step 5 */}
+                <div className="flex flex-col sm:flex-row items-center space-x-4 p-4 sm:p-6 lg:p-12 bg-white border border-2 rounded-md shadow-lg">
+                    <div className="flex-shrink-0 order-1 sm:order-0">
+                        <img
+                            src="https://imgproxy.attic.sh/PEYVBT6d-gxAhralUlZ3D4vmDmKDcar0LvSYlvsAhEI/rs:fit:768:768:1:1/t:1:FF00FF:false:false/pngo:false:true:256/aHR0cHM6Ly9hdHRp/Yy5zaC85dzd4OGxj/dWJmcHJyanBsZmQ3/dmdyZGRxOG1m.png"
+                            alt="Step 5"
+                            className="w-40 mt-4 lg:mt-0 h-40 lg:w-64 lg:h-64 object-cover"
+                        />
+                    </div>
+                    <div className="flex flex-col order-0 sm:order-1">
+                        <h3 className="text-xl font-semibold mb-4">Step 5 — Entrance examinations</h3>
+                        <p className="text-gray-600 text-sm sm:text-base">
+                            After the medical check-up, international students must take an entrance examination. This will include testing your knowledge of chemistry and biology to ensure eligibility for further studies.
+                        </p>
+                    </div>
+                </div>
+
+                {/* Step 6 */}
+                <div className="flex flex-col sm:flex-row items-center space-x-4 p-4 sm:p-6 lg:p-12 bg-white border border-2 rounded-md shadow-lg">
+                    <div className="flex-shrink-0 order-1 sm:order-0">
+                        <img
+                            src="https://cdn-icons-png.flaticon.com/512/5873/5873467.png"
+                            alt="Step 6"
+                            className="w-40 mt-4 lg:mt-0 h-40 lg:w-64 lg:h-64 object-cover"
+                        />
+                    </div>
+                    <div className="flex flex-col order-0 sm:order-1">
+                        <h3 className="text-xl font-semibold mb-4">Step 6 — Pay fees & sign contract</h3>
+                        <p className="text-gray-600 text-sm sm:text-base">
+                            After passing all the required steps and entrance exams, you will need to pay the necessary fees and sign the contract. This officially makes you a student of RSMU.
+                            <br /><br />
+                            If you have any questions regarding the admission process, feel free to contact the university staff at any time.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+};
+
+export default Steps;

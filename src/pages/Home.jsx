@@ -8,6 +8,8 @@ import Rector from '../components/home/rector';
 import Clients  from '../components/home/Clients';
 import Stats  from '../components/home/Stats';
 import Timeline  from '../components/home/Timeline';
+import Steps from '../components/home/Steps';
+import Contact from '../components/home/Contact';
 
 const App = () => {
   return (
@@ -20,6 +22,8 @@ const App = () => {
      <Stats />
      <Timeline />
      <Clients />
+     <Steps />
+     <Contact />
     </>
   );
 };

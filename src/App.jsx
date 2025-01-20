@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import logo from "./assets/logo.png";
 import Navbar from "./components/shared/Navbar"; // Import Navbar
 import Home from "./pages/Home"; // Import Home page
-import About from "./pages/About"; // Import About page
+import Gallery from "./pages/Gallery"; // Import About page
 import Services from "./pages/Services"; // Import Services page
 import Contact from "./pages/Contact"; // Import Contact page
 import app from './assets/whatsapp.gif';
@@ -29,7 +29,7 @@ const App = () => {
       {/* Main routes */}
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/gallery" element={<Gallery />} />
         <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>

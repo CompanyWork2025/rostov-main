@@ -1,10 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom'; // Import NavLink from react-router-dom
 import logo from '../../assets/logo.png';
+import { useLocation } from 'react-router-dom'; 
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [language, setLanguage] = useState('ENG');
+  const location = useLocation();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -13,6 +15,11 @@ const Navbar = () => {
   const toggleLanguage = () => {
     setLanguage(language === 'ENG' ? 'RUS' : 'ENG'); // Toggle language between ENG and RUS
   };
+
+  useEffect(() => {
+    window.scrollTo(0, 0);  // Scroll to the top
+  }, [location]);  // Dependency array listens to route changes
+
 
   return (
     <nav className="sticky top-0 z-50 bg-white shadow-lg shadow-blue/20 transition-shadow"> {/* Updated shadow to shadow-md */}
@@ -46,21 +53,14 @@ const Navbar = () => {
             Home
           </NavLink>
           <NavLink
-            to="/about"
+            to="/gallery"
             className={({ isActive }) =>
               isActive ? 'font-bold text-[#306185]' : 'text-gray-500 hover:text-[#2d4f6b]'
             }
           >
-            About
+            Gallery
           </NavLink>
-          <NavLink
-            to="/services"
-            className={({ isActive }) =>
-              isActive ? 'font-bold text-[#306185]' : 'text-gray-500 hover:text-[#2d4f6b]'
-            }
-          >
-            Services
-          </NavLink>
+
           <NavLink
             to="/contact"
             className={({ isActive }) =>
@@ -170,23 +170,18 @@ const Navbar = () => {
             Home
           </NavLink>
           <NavLink
-            to="/about"
+            to="/gallery"
             onClick={toggleMenu}
             className={({ isActive }) =>
-              isActive ? 'font-bold text-[#306185] block text-center' : 'text-gray-500 hover:text-blue-500 block text-center'
+              isActive
+                ? 'font-bold text-[#306185] block text-center'
+                : 'text-gray-500 hover:text-blue-500 block text-center'
             }
           >
-            About
+            Gallery
           </NavLink>
-          <NavLink
-            to="/services"
-            onClick={toggleMenu}
-            className={({ isActive }) =>
-              isActive ? 'font-bold text-[#306185] block text-center' : 'text-gray-500 hover:text-blue-500 block text-center'
-            }
-          >
-            Services
-          </NavLink>
+
+
           <NavLink
             to="/contact"
             onClick={toggleMenu}
