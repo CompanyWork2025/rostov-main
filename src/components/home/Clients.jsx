@@ -21,16 +21,14 @@ const Clients = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center justify-center h-[650px] bg-gray-100 p-6 lg:px-20">
+    <div className="flex flex-col items-center justify-center h-auto bg-gray-100 p-6 lg:px-20">
       {/* Main Heading */}
-      <h1 className="text-4xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 mb-12 text-center">
+      <h1 className="text-2xl lg:text-4xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 mb-12 text-center">
         Rostov University is recognized by WHO and is prominently represented in both international and domestic rankings.
       </h1>
-      <p></p>
-
 
       {/* Grid View */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-8 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full">
         {gridItems.map((item) => (
           <div
             key={item.id}
@@ -40,15 +38,15 @@ const Clients = () => {
             <img
               src={item.image}
               alt={item.title}
-              className="w-36 h-36 object-contain mb-4"
+              className="w-32 h-32 sm:w-36 sm:h-36 md:w-40 md:h-48 object-contain mb-4"
             />
-            
+           
           </div>
         ))}
       </div>
 
       {/* Apply Now Button */}
-      <button className="mt-8 px-6 py-2 bg-[#306185] text-white font-semibold rounded-md shadow hover:bg-green-600">
+      <button className="mt-8 px-6 py-3 bg-[#306185] text-white font-semibold rounded-md shadow hover:bg-green-600 w-full sm:w-auto">
         Apply Now!
       </button>
     </div>

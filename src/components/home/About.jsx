@@ -1,6 +1,7 @@
 import React from "react";
-import men from '../../assets/men.png';
+import men from '../../assets/main.gif';
 import { Link } from "react-router-dom";
+import { FaFilePdf } from 'react-icons/fa'; // Import Font Awesome PDF icon
 
 const About = () => {
   return (
@@ -63,11 +64,26 @@ const About = () => {
                 <span className="text-green-500 mr-2">✔️</span> Recognized by WHO
               </li>
             </ul>
-            <button className="w-36 py-2 mt-8 bg-[#306185] hover:bg-red-700 rounded-lg text-white text-lg font-semibold mx-auto lg:mx-0 block">
-              <Link to="/contact" className="block text-center w-full h-full">
-                Apply Now!
-              </Link>
-            </button>
+
+            {/* Buttons container (flex row) */}
+            <div className="flex justify-center lg:justify-start mt-8 space-x-4">
+              {/* Download Button */}
+              <a
+                href="/brochure.pdf"   // Path to the PDF file you want to download
+                download="RSMU_Brochure" // File name for downloading
+                className="w-56 py-2 bg-green-600 hover:bg-blue-700 rounded-lg text-white text-lg font-semibold flex items-center justify-center"
+              >
+                <FaFilePdf className="mr-2" /> {/* PDF Icon */}
+                Download Brochure
+              </a>
+
+              {/* Apply Now Button */}
+              <button className="w-36 py-2 bg-[#306185] hover:bg-red-700 rounded-lg text-white text-lg font-semibold">
+                <Link to="/contact" className="block text-center w-full h-full">
+                  Apply Now!
+                </Link>
+              </button>
+            </div>
           </div>
 
           {/* Right image */}
@@ -75,7 +91,7 @@ const About = () => {
             <img
               src={men}
               alt="Doctor illustration"
-              className="w-full lg:w-[300px] lg:h-[500px] h-auto object-contain"
+              className="w-full lg:w-[500px] lg:h-[800px] lg:-mt-24 lg:ml-4 h-auto object-contain mx-auto"
             />
           </div>
         </div>

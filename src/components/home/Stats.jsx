@@ -1,21 +1,22 @@
 import React from "react";
+import doc from "../../assets/doc.gif";
 
 function StatsGrid() {
   return (
     <>
       <div className="bg-blue-50 flex items-center justify-center p-4 lg:p-8">
-        <div className="grid lg:grid-cols-3 gap-8 items-center w-full max-w-7xl">
+        <div className="grid lg:grid-cols-3 gap-8 items-center w-full max-w-[1400px]">
           {/* Left Side Content */}
           <div className="flex flex-col">
-            <h1 className="text-2xl lg:text-3xl font-bold text-gray-800 mb-4 text-center lg:text-left">
+            <h1 className="text-2xl lg:text-4xl font-bold text-gray-800 mb-4 text-center lg:text-left">
               Facts about our university
             </h1>
-            <p className="text-sm lg:text-md text-gray-600 text-center lg:text-left">
+            <p className="text-sm lg:text-lg text-gray-600 text-center lg:text-left">
               Rostov State Medical University is one of the most renowned
               medical universities in Russia, offering a rich legacy of academic
               excellence and a high standard of medical education.
             </p>
-            <p className="text-sm lg:text-md mt-4 text-gray-600 text-center lg:text-left">
+            <p className="text-sm lg:text-lg mt-4 text-gray-600 text-center lg:text-left">
               At RostSMU, our faculty comprises leading experts in their fields,
               bringing a wealth of experience, knowledge, and dedication to
               education and research.
@@ -25,7 +26,7 @@ function StatsGrid() {
           {/* Middle PNG/Image */}
           <div className="flex justify-center">
             <img
-              src="https://cdn-icons-png.flaticon.com/512/3774/3774299.png"
+              src={doc}
               alt="Middle Illustration"
               className="w-32 h-48 lg:w-48 lg:h-64 object-cover"
             />
@@ -33,10 +34,10 @@ function StatsGrid() {
 
           {/* Right Side Box */}
           <div className="bg-[#306185] border rounded-lg p-6 shadow-lg">
-            <h2 className="text-xl lg:text-2xl font-semibold text-red-400 mb-4 text-center lg:text-left">
+            <h2 className="text-xl lg:text-3xl font-semibold text-red-400 mb-4 text-center lg:text-left">
               Why choose us:
             </h2>
-            <ul className="text-white space-y-2">
+            <ul className="text-white space-y-4">
               <li className="flex items-center">
                 <span className="w-3 h-3 bg-blue-500 rounded-full mr-2"></span>
                 High quality education
