@@ -6,6 +6,7 @@ import Home from "./pages/Home"; // Import Home page
 import Gallery from "./pages/Gallery"; // Import About page
 import Services from "./pages/Services"; // Import Services page
 import Contact from "./pages/Contact"; // Import Contact page
+import Footer from "./components/shared/Footer";
 import app from './assets/whatsapp.gif';
 
 const App = () => {
@@ -34,7 +35,7 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
       </Routes>
     
-
+      <Footer />
       {/* Sticky "Apply Now!" button on right side vertically */}
       <div
         className="fixed top-80 lg:top-64 right-0 w-10 h-40 bg-[#FF931E] z-15 rounded-l-3xl flex flex-col items-center justify-center z-50 cursor-pointer"
