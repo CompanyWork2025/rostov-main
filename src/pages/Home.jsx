@@ -7,6 +7,7 @@ import Video from '../components/home/VideoSection';
 import Rector from '../components/home/rector';
 import Clients  from '../components/home/Clients';
 import Stats  from '../components/home/Stats';
+import InternationalApplicants from '../components/home/InternationalApplicants';
 import Timeline  from '../components/home/Timeline';
 import Steps from '../components/home/Steps';
 import Contact from '../components/home/Contact';
@@ -20,6 +21,7 @@ const App = () => {
      <Video />
      <Rector />
      <Stats />
+     <InternationalApplicants />
      <Timeline />
      <Clients />
      <Steps />
