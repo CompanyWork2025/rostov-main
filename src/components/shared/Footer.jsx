@@ -18,7 +18,7 @@ const Footer = () => (
         <div className='col-span-1 lg:col-span-2 mb-4 lg:mb-0'>
           <h3 className='font-bold text-lg'>Subscribe to our Newsletter</h3>
           <form className='mt-4 flex justify-center'>
-            <input type='email' placeholder='Enter your email address' className='p-2 rounded-l-lg' />
+            <input type='email' placeholder='Enter your email address' className='p-4 text-black rounded-l-lg' />
             <button type='submit' className='bg-blue-500 hover:bg-blue-700 text-white p-2 rounded-r-lg'>Subscribe</button>
           </form>
         </div>

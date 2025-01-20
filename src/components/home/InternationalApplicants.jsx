@@ -11,7 +11,7 @@ const InternationalApplicants = () => {
       <div className="bg-black bg-opacity-80 py-12">
         <div className="container mx-auto max-w-5xl">
           {/* Heading */}
-          <h1 className="text-3xl font-bold mb-6 text-center">
+          <h1 className="text-xl lg:text-3xl font-bold mb-6 text-center">
             Information for International Applicants (Entrants)
           </h1>
 
@@ -22,7 +22,7 @@ const InternationalApplicants = () => {
           </p>
 
           {/* Degree Programs */}
-          <div className="bg-white rounded-lg p-6 text-black shadow-lg">
+          <div className="bg-white rounded-lg p-4 lg:p-6 text-black shadow-lg">
             <h2 className="text-xl font-semibold mb-4 text-center">
               Degree Programs for International Students
             </h2>
