@@ -6,6 +6,7 @@ const Clients = () => {
     { id: 2, image: "https://via.placeholder.com/150", title: "Course 2" },
     { id: 3, image: "https://via.placeholder.com/150", title: "Course 3" },
     { id: 4, image: "https://via.placeholder.com/150", title: "Course 4" },
+    { id: 5, image: "https://via.placeholder.com/150", title: "Course 5" },
   ];
 
   return (
