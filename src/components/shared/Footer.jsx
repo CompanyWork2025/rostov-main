@@ -31,7 +31,7 @@ const Footer = () => (
         </div>
       </div>
     </div>
-    <p className='text-center mt-8'>© 2025 Rostov University. All Rights Reserved.</p>
+    <p className='text-center mt-8'>© 2025 Rostov State Medical University. All Rights Reserved.</p>
   </footer>
 );
 
