@@ -21,19 +21,19 @@ const About = () => {
             </p>
 
             <div className="text-gray-700 space-y-4">
-              <p className="text-lg">
+              <p className="text-lg px-4">
                 RSMU is equipped with modern laboratories, simulation centers,
                 and training facilities that allow students to gain practical
                 skills and study medicine with the help of advanced technologies.
               </p>
-              <p className="text-lg">
+              <p className="text-lg px-4">
                 RSMU provides students with the opportunity to participate in
                 international exchange programs, to undergo internships in leading
                 clinics of Russia and the world. The University supports young
                 researchers and provides them with the opportunity to engage in
                 scientific activities.
               </p>
-              <p className="text-lg">
+              <p className="text-lg px-4">
                 Modern infrastructure: comfortable classrooms, laboratories,
                 libraries, gyms, dormitories - everything is created for
                 comfortable study and life of students.

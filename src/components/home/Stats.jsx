@@ -21,6 +21,9 @@ function StatsGrid() {
               bringing a wealth of experience, knowledge, and dedication to
               education and research.
             </p>
+            <p className="text-sm lg:text-lg mt-4 text-gray-600 text-center lg:text-left">
+            The Rostov State Medical University is accredited by the Russian Health Ministry for education for the teaching of both Russian and overseas students.
+            </p>
           </div>
 
           {/* Middle PNG/Image */}
@@ -28,16 +31,16 @@ function StatsGrid() {
             <img
               src={doc}
               alt="Middle Illustration"
-              className="w-32 h-48 lg:w-48 lg:h-64 object-cover"
+              className="w-32 h-48 lg:w-48 lg:h-96 object-cover"
             />
           </div>
 
           {/* Right Side Box */}
-          <div className="bg-[#306185] border rounded-lg p-6 shadow-lg">
+          <div className="bg-[#306185] border rounded-lg p-10 shadow-lg">
             <h2 className="text-xl lg:text-3xl font-semibold text-red-400 mb-4 text-center lg:text-left">
               Why choose us:
             </h2>
-            <ul className="text-white space-y-4">
+            <ul className="text-white lg:text-lg space-y-10">
               <li className="flex items-center">
                 <span className="w-3 h-3 bg-blue-500 rounded-full mr-2"></span>
                 High quality education

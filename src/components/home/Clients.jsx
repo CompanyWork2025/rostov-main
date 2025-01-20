@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Clients = () => {
   const gridItems = [
@@ -46,9 +47,9 @@ const Clients = () => {
       </div>
 
       {/* Apply Now Button */}
-      <button className="mt-8 px-6 py-3 bg-[#306185] text-white font-semibold rounded-md shadow hover:bg-green-600 w-full sm:w-auto">
+      <Link to="/contact" className="mt-8 px-6 py-3 bg-[#306185] text-center text-white font-semibold rounded-md shadow hover:bg-green-600 w-full sm:w-auto">
         Apply Now!
-      </button>
+      </Link>
     </div>
   );
 };
