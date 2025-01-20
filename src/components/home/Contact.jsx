@@ -53,7 +53,7 @@ function Contact() {
       </div>
 
       {/* Address Box */}
-      <div className="bg-white shadow-lg rounded-lg mt-12 p-4">
+      <div className="bg-white shadow-lg rounded-lg mt-4 p-4">
         <h3 className="text-2xl font-semibold text-gray-800 mb-4">Address</h3>
         <p className="text-lg text-gray-600">
           Office 608, 6th floor, Aggarwal Cyber Plaza-1, Netaji Subhash Place, Pitampura - 110034
@@ -62,7 +62,7 @@ function Contact() {
       </div>
 
       {/* Google Map */}
-      <div className="mt-12">
+      <div className="mt-4">
         <iframe
           className="w-full h-64 lg:h-96 rounded-lg shadow-lg"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3499.8875864639285!2d77.146888525503!3d28.693009125631736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d023310b12e0f%3A0x644058b28ae94aa4!2sAggarwal%20Cyber%20Plaza-1!5e0!3m2!1sen!2sin!4v1737363887005!5m2!1sen!2sin"
