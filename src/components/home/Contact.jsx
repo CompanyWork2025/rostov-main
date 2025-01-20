@@ -2,9 +2,9 @@ import React from "react";
 
 function Contact() {
   return (
-    <div className="bg-gradient-to-b from-[#306185] to-[#2d4f6b] px-4 lg:mt-8 lg:px-24 py-8">
+    <div className="bg-gradient-to-b from-[#306185] to-[#2d4f6b] px-4 mt-8 lg:px-24 py-8">
       {/* Heading */}
-      <h2 className="text-3xl lg:text-4xl font-bold text-white text-start">
+      <h2 className="text-xl lg:text-4xl font-bold text-white text-center lg:text-start">
         Contact our official representative of Indians & International students
       </h2>
 
