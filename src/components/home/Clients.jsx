@@ -5,10 +5,11 @@ const Clients = () => {
     { id: 1, image: "https://via.placeholder.com/150", title: "Course 1" },
     { id: 2, image: "https://via.placeholder.com/150", title: "Course 2" },
     { id: 3, image: "https://via.placeholder.com/150", title: "Course 3" },
+    { id: 4, image: "https://via.placeholder.com/150", title: "Course 4" },
   ];
 
   return (
-    <div className="flex flex-col items-center justify-center h-[500px] bg-gray-100 p-6 lg:px-24">
+    <div className="flex flex-col items-center justify-center h-[650px] bg-gray-100 p-6 lg:px-24">
       {/* Main Heading */}
       <h1 className="text-4xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 mb-12 text-center">
         Rostov University is recognized by WHO and is prominently represented in both international and domestic rankings.
