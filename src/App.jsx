@@ -11,6 +11,7 @@ import Blog from "./pages/Blog";
 import NMC from "./pages/NMCRegulations";
 import Updates from "./pages/Updates";
 import FAQ from "./pages/FAQ";
+import Dormi from "./pages/Dormitories";
 import NeetUpdates from "./pages/NEETUpdates";
 import Contact from "./pages/Contact";
 import Footer from "./components/shared/Footer";
@@ -77,6 +78,7 @@ const App = () => {
           <Route path="/video-gallery" element={<VideoGallery />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/faqs" element={<FAQ />} />
+          <Route path="/dormitories" element={<Dormi />} />
           <Route path="/neet-ug-updates" element={<NeetUpdates />} />
           <Route path="/nmc-regulations" element={<NMC />} />
           <Route path="/upcoming-events" element={<Updates />} />
