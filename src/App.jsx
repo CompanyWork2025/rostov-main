@@ -7,6 +7,11 @@ import History from "./pages/History"; // Import Home page
 import Today from "./pages/Today"; // Import Home page
 import Gallery from "./pages/Gallery"; // Import Gallery page
 import VideoGallery from "./pages/VideoGallery"; // Import Video Gallery page
+import Blog from "./pages/Blog";
+import NMC from "./pages/NMCRegulations";
+import Updates from "./pages/Updates";
+import FAQ from "./pages/FAQ";
+import NeetUpdates from "./pages/NEETUpdates";
 import Contact from "./pages/Contact"; // Import Contact page
 import Footer from "./components/shared/Footer";
 import app from './assets/whatsapp.gif';
@@ -39,6 +44,11 @@ const App = () => {
           <Route path="/representatives" element={<Representatives />} />
           <Route path="/photo-gallery" element={<Gallery />} />
           <Route path="/video-gallery" element={<VideoGallery />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/faqs" element={<FAQ />} />
+          <Route path="/neet-ug-updates" element={<NeetUpdates />} />
+          <Route path="/nmc-regulations" element={<NMC/>} />
+          <Route path="/upcoming-events" element={<Updates />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
 
