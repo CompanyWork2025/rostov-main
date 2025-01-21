@@ -4,11 +4,13 @@ import logo from "./assets/logo.png";
 import Navbar from "./components/shared/Navbar"; // Import Navbar
 import Home from "./pages/Home"; // Import Home page
 import History from "./pages/History"; // Import Home page
+import Today from "./pages/Today"; // Import Home page
 import Gallery from "./pages/Gallery"; // Import Gallery page
 import VideoGallery from "./pages/VideoGallery"; // Import Video Gallery page
 import Contact from "./pages/Contact"; // Import Contact page
 import Footer from "./components/shared/Footer";
 import app from './assets/whatsapp.gif';
+import Representatives from "./pages/Representatives";
 
 const App = () => {
   // Popup state to control visibility of the form
@@ -28,11 +30,13 @@ const App = () => {
     <>
       <Router>
         <Navbar /> {/* Include Navbar component */}
-
+       
         {/* Main routes */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/history" element={<History />} />
+          <Route path="/today" element={<Today />} />
+          <Route path="/representatives" element={<Representatives />} />
           <Route path="/photo-gallery" element={<Gallery />} />
           <Route path="/video-gallery" element={<VideoGallery />} />
           <Route path="/contact" element={<Contact />} />
