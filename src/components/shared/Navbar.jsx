@@ -78,7 +78,7 @@ const Navbar = () => {
                 isActive ? 'font-bold text-[#306185]' : 'text-gray-500 hover:text-[#2d4f6b]'
               }
             >
-              Representatives
+              Representative
             </NavLink>
 
             {/* Gallery Dropdown */}
@@ -309,7 +309,7 @@ const Navbar = () => {
                   isActive ? 'font-bold text-[#306185] block text-center' : 'text-gray-500 hover:text-blue-500 block text-center'
                 }
               >
-                Representatives
+                Representative
               </NavLink>
 
               {/* Centered Gallery Dropdown */}

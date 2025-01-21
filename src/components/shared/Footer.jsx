@@ -8,12 +8,30 @@ const Footer = () => (
       <div className='max-w-screen-xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-center'>
         <div className='mb-4'>
           <h3 className='font-bold text-lg'>Follow Us</h3>
-          <div className='flex justify-center space-x-4 mt-2'>
-            <a href='#'><FaFacebookF /></a>
-            <a href='#'><FaTwitter /></a>
-            <a href='#'><FaInstagram /></a>
-            <a href='#'><FaYoutube /></a>
+          <div className="flex justify-center space-x-4 mt-2">
+            <a
+              href="https://www.facebook.com/share/1C7at92AHy/?mibextid=wwXIfr"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaFacebookF className="text-3xl" /> {/* Increase size of the icon */}
+            </a>
+            <a
+              href="https://www.instagram.com/rostsmurussia.officials?igsh=Zjh5ODhjdHA4Nm9p"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaInstagram className="text-3xl" /> {/* Increase size of the icon */}
+            </a>
+            <a
+              href="https://youtube.com/@rostsmuofficials?si=zf16-kVZj-gsjtIf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaYoutube className="text-3xl" /> {/* Increase size of the icon */}
+            </a>
           </div>
+
         </div>
         <div className='col-span-1 lg:col-span-2 mb-4 lg:mb-0'>
           <h3 className='font-bold text-lg'>Subscribe to our Newsletter</h3>

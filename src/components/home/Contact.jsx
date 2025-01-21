@@ -65,7 +65,7 @@ function Contact() {
       <div className="mt-4">
         <iframe
           className="w-full h-64 lg:h-96 rounded-lg shadow-lg"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3499.8875864639285!2d77.146888525503!3d28.693009125631736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d023310b12e0f%3A0x644058b28ae94aa4!2sAggarwal%20Cyber%20Plaza-1!5e0!3m2!1sen!2sin!4v1737363887005!5m2!1sen!2sin"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3499.8652879979413!2d77.1475991755031!3d28.693676075631423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d03d92f45f1bb%3A0xf2fcd5bfa7590c08!2sThe%20RREC%20Team-MBBS%20in%20Russia%20%7C%20Direct%20Official%20Admission%20Partners%20%7C%20Top%20Medical%2C%20Technical%2C%20Federal%20Universities%20of%20Russia.!5e0!3m2!1sen!2sin!4v1737455159513!5m2!1sen!2sin"
           allowFullScreen=""
           loading="lazy"
           title="Office Location"

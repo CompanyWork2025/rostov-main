@@ -6,7 +6,7 @@ const Representatives = () => {
     return (
         <>
             <Helmet>
-                <title>RSMU Representatives | RSMU University</title>
+                <title>RSMU Representative | RSMU University</title>
                 <meta
                     name="description"
                     content="Learn about the Representatives of RSMU University. From its inception to becoming a leader in education."
@@ -26,9 +26,9 @@ const Representatives = () => {
             <div className="px-6 py-10 max-w-7xl mx-auto">
                 {/* Heading Section */}
                 <div className="text-center lg:text-left mb-10">
-                    <h2 className="text-2xl md:text-4xl font-semibold text-gray-800 mb-4">RSMU's Representatives: The Bridge Between Cultures and Knowledge</h2>
+                    <h2 className="text-2xl md:text-4xl font-semibold text-gray-800 mb-4">RSMU's Representative: The Bridge Between Cultures and Knowledge</h2>
                     <p className="lg:text-lg text-gray-600">
-                        The representatives at RSMU play a pivotal role in fostering global ties, ensuring smooth academic operations, and acting as mediators between RSMU and prospective students around the world.
+                        The representative at RSMU play a pivotal role in fostering global ties, ensuring smooth academic operations, and acting as mediators between RSMU and prospective students around the world.
                     </p>
                 </div>
 

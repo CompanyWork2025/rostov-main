@@ -8,6 +8,13 @@ import image3 from "../../assets/team2.webp";
 const Hero = () => {
   const images = [image1, image2, image3];
   const [currentImage, setCurrentImage] = useState(0);
+  const [isContentExpanded, setIsContentExpanded] = useState([false, false, false, false]);
+
+  const toggleContent = (index) => {
+    const updatedState = [...isContentExpanded];
+    updatedState[index] = !updatedState[index];
+    setIsContentExpanded(updatedState);
+  };
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -120,26 +127,36 @@ const Hero = () => {
 
       {/* Info Boxes */}
       <main className="container mx-auto px-6 lg:px-20 relative z-20 mt-80 lg:-mt-10">
-        <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {["Leading University", "Most Rated", "High Quality Eductaion", "Great Choice"].map((title, index) => (
-            <article
-              key={index}
-              className={`bg-white shadow-lg rounded-lg p-6 text-center border border-gray-200 animate-slideUp delay-${index * 200}`}
+      <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {["Leading University", "Overview of RSMU", "High Quality Education", "Great Choice"].map((title, index) => (
+          <article
+            key={index}
+            className={`bg-white shadow-lg rounded-lg p-6 text-center border border-gray-200 animate-slideUp delay-${index * 200} flex flex-col`}
+          >
+            <h2 className="text-xl font-semibold text-red-500 mb-3">{title}</h2>
+            <p
+              className={`text-gray-600 text-sm flex-grow overflow-hidden transition-all duration-500 ${
+                isContentExpanded[index] ? 'max-h-full' : 'max-h-28'
+              }`}
             >
-              <h2 className="text-xl font-semibold text-red-500 mb-3">{title}</h2>
-              <p className="text-gray-600 text-sm">
-                {index === 0
-                  ? "Established in 1932, RSMU is one of the leading medical universities in Russia."
-                  : index === 1
-                  ? "Included in domestic and international university rankings, such as UniRank."
-                  : index === 2
-                  ? "RSMU operates more than 100 Departments. More than 900+ teachers are constantly working introducing innovations and interactive forms of learning. Among them are 180+ Doctors of Medical Sciences, 95+ professors and 480+ PH.Ds."
-                  : "Renowned for scientific departments in Surgery, Urology, Oncology, Cardiology, Nephrology, Neurosurgery, Morphology, and Dermatology."}
-              </p>
-            </article>
-          ))}
-        </section>
-      </main>
+              {index === 0
+                ? "Rostov State Medical University, Russia – A Gateway For An Extraordinary Medical Education. Russia is reckoned as one of the most popular destinations for studying medicine. It is consistently preferred as one of the frontline choices to pursue medical education for many aspirants in India. Well, there are many NMC (National Medical Commission) recognized and government-affiliated medical universities in Russia, however, Rostov State Medical University is irresistibly a supreme choice for those who want to be assured of grabbing world-class medical education at affordable cost and are willing to complete their MBBS with complete knowledge in their profession."
+                : index === 1
+                ? "RostSMU is among one of the oldest and top medical universities in Russia. Rostov University came into existence in 1930. It is also known as RostSMU or RostGMU. This is a government medical education institute that is located in Rostov-on-Don City, Russia and it is the largest Government Medical University in South Russian Federation. It is seventh oldest medical university of Russian Federation."
+                : index === 2
+                ? "RSMU operates more than 100 Departments. More than 900+ teachers are constantly working introducing innovations and interactive forms of learning. Among them are 180+ Doctors of Medical Sciences, 95+ professors and 480+ PH.Ds."
+                : "Renowned for scientific departments in Surgery, Urology, Oncology, Cardiology, Nephrology, Neurosurgery, Morphology, and Dermatology."}
+            </p>
+            <button
+              className="text-blue-500 mt-auto text-sm"
+              onClick={() => toggleContent(index)}
+            >
+              {isContentExpanded[index] ? "⬆️" : "⬇️"}
+            </button>
+          </article>
+        ))}
+      </section>
+    </main>
     </>
   );
 };
