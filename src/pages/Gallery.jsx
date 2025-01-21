@@ -50,7 +50,7 @@ const Gallery = () => {
   return (
     <>
       <Helmet>
-        <title>Gallery | RSMU University</title>
+        <title>Photo Gallery | RSMU University</title>
         <meta
           name="description"
           content="Browse the Gallery at RSMU University and explore vibrant images of campus events, cultural festivals, academic facilities, and student achievements."
@@ -93,7 +93,7 @@ const Gallery = () => {
             loading="eager"
           />
           <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-            <h1 className="text-3xl lg:text-4xl text-white font-bold">Welcome to Our Gallery</h1>
+            <h1 className="text-2xl lg:text-4xl text-white font-bold">Welcome to Our Photo Gallery</h1>
           </div>
         </div>
 
