@@ -1,33 +1,6 @@
 import React from 'react';
 
 const Recognition = () => {
-  const recognitions = [
-    {
-      title: 'Accreditation by Russian Ministry of Education',
-      description:
-        'Our university is officially recognized and accredited by the Ministry of Education and Science of the Russian Federation.',
-      link: 'https://www.russianeducationministry.gov/recognition',
-    },
-    {
-      title: 'International Ranking',
-      description:
-        'We are consistently ranked among the top universities globally in multiple fields, demonstrating our commitment to high academic standards.',
-      link: 'https://www.internationalranking.com/rostovuniversity',
-    },
-    {
-      title: 'Best Campus Facility Award',
-      description:
-        'Awarded for exceptional infrastructure, dormitory facilities, and campus support services, ensuring a world-class student experience.',
-      link: 'https://campusfacilitiesaward.com/rostovuniversity',
-    },
-    {
-      title: 'Research Excellence in Medical Sciences',
-      description:
-        'We have been acknowledged for groundbreaking research in various medical fields, contributing globally to healthcare advancements.',
-      link: 'https://www.researchawards.org/rostov-university-medical-sciences',
-    },
-  ];
-
   const externalLinks = [
     { title: 'National Medical Commission India', link: 'http://www.nmc.org.in/' },
     { title: 'World Health Organization', link: 'http://www.who.int/en/' },
@@ -55,26 +28,7 @@ const Recognition = () => {
         </p>
       </div>
 
-      {/* Recognitions List */}
-      <section className="space-y-8">
-        {recognitions.map((recognition, index) => (
-          <div key={index} className="bg-white border border-2 shadow-lg rounded-lg p-6 transform hover:scale-105 transition-all duration-300">
-            <h3 className="text-2xl font-semibold text-[#306185]">{recognition.title}</h3>
-            <p className="text-gray-500 mt-2">{recognition.description}</p>
-            <div className="mt-4">
-              <a
-                href={recognition.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block bg-[#306185] text-white px-4 py-2 rounded-full shadow hover:bg-blue-700 transition duration-300"
-              >
-                Visit Link
-              </a>
-            </div>
-          </div>
-        ))}
-      </section>
-
+      
       {/* External Links Grid */}
       <section className="mt-12 mb-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {externalLinks.map((link, index) => (

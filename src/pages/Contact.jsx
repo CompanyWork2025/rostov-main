@@ -109,7 +109,6 @@ const ContactForm = () => {
               </div>
             </div>
 
-
             <div className="flex space-x-4">
               <div className="w-1/2">
                 <label htmlFor="city" className="text-gray-700">
@@ -182,7 +181,6 @@ const ContactForm = () => {
               </div>
             </div>
 
-
             <div>
               <label htmlFor="email" className="text-gray-700">
                 Email Address <span className="text-red-500">*</span>
@@ -232,15 +230,48 @@ const ContactForm = () => {
               width="600"
               height="400"
               style={{ border: "0" }}
-              allowFullScreen=""
+              allowFullScreen="true"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             />
           </div>
         </div>
-        
       </div>
-      
+
+      {/* Call to Action Section with adjusted margins */}
+      <div className=" mx-4 md:mx-28 bg-[#669d3f] mb-8 py-8 p-8 rounded-xl text-center">
+        <h2 className="text-2xl lg:text-3xl font-bold text-white mb-4">
+          OUR INTERNATIONAL PARTNER
+        </h2>
+        <p className="text-md lg:text-lg text-white mb-8">
+          ♦ Reliable Russian Educational Consultants Pvt. Ltd ♦
+        </p>
+        <div className="flex items-center justify-between">
+          <div className="flex-1 text-left">
+            {/* Left-side Content */}
+            <p className="text-md lg:text-lg text-white mb-8">
+              Registered office address: Office no. 608, 6th floor, Aggarwal Cyber Plaza-1 Netaji Subhash Place, Pitampura, New Delhi - 110034 Delhi, India
+            </p>
+          </div>
+          <div className="flex-1 text-left">
+            {/* Centered Content (Empty for now) */}
+          </div>
+          <div className="flex-1 text-right">
+            {/* Right-side Content */}
+            <p className="text-md lg:text-lg text-white mb-8">
+              Corporate office address: Office no. 709-710, 7th floor, P.P. Trade Center Netaji Subhash Place, Pitampura, New Delhi - 110034 Delhi, INDIA
+            </p>
+          </div>
+        </div>
+
+        {/* Centered Text below the flexbox */}
+        <div className="mt-8 text-center lg:px-14">
+          <p className="text-md lg:text-lg text-white">
+            Contacts: For Indian Students: +91-7669533991, +91-7042284508 / 509 Landline: +91-1143215827, Toll-free: 1800-572-5827 For International Students: +7-9515173719, +7-9515190376 E-mail: contact@rrecrostov.com, contact@rrecrussia.com, rrec.educonsultants@gmail.com Website: www.rrecrostov.com
+          </p>
+        </div>
+      </div>
+
     </>
   );
 };
