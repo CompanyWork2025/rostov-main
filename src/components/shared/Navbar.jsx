@@ -209,6 +209,13 @@ const Navbar = () => {
                     }
                   >
                     NMC Regulations
+                  </NavLink><NavLink
+                    to="/recognition"
+                    className={({ isActive }) =>
+                      isActive ? 'block py-2 px-4 font-bold text-[#306185] bg-gray-100' : 'block py-2 px-4 hover:bg-gray-200'
+                    }
+                  >
+                    Recognitions & Links
                   </NavLink>
                 </div>
               )}
@@ -483,6 +490,20 @@ const Navbar = () => {
                       }
                     >
                       NMC Regulations
+                    </NavLink>
+                    <NavLink
+                      to="/recognition"
+                      onClick={() => {
+                        setIsResourcesDropdownOpen(false); // Close the dropdown
+                        toggleMenu(); // Close the mobile menu
+                      }}
+                      className={({ isActive }) =>
+                        isActive
+                          ? 'block py-2 px-4 font-bold text-[#306185] bg-gray-100'
+                          : 'block py-2 px-4 hover:bg-gray-200'
+                      }
+                    >
+                      Recognitions & Links
                     </NavLink>
                   </div>
                 )}

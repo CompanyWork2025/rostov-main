@@ -20,6 +20,7 @@ import Representatives from "./pages/Representatives";
 
 // Import the emailjs-com package
 import emailjs from 'emailjs-com';
+import Recognition from "./pages/Recognition";
 
 const App = () => {
   const [showPopup, setShowPopup] = useState(false);
@@ -81,6 +82,7 @@ const App = () => {
           <Route path="/dormitories" element={<Dormi />} />
           <Route path="/neet-ug-updates" element={<NeetUpdates />} />
           <Route path="/nmc-regulations" element={<NMC />} />
+          <Route path="/recognition" element={<Recognition />} />
           <Route path="/upcoming-events" element={<Updates />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>

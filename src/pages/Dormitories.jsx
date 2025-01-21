@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 const Dormitories = () => {
   const dormitoryInfo = [
@@ -20,11 +21,24 @@ const Dormitories = () => {
     },
   ];
 
-  // The common PDF link for all dormitories (replace with your own hosted PDF URL)
-  const commonPdfLink = 'https://rostgmu.ru/wp-content/uploads/2023/07/Dormitories-for-International-Students.pdf'; // Use actual path
+  const commonPdfLink = 'https://rostgmu.ru/wp-content/uploads/2023/07/Dormitories-for-International-Students.pdf';
 
   return (
     <div className="container mx-auto px-6 lg:px-20 mt-8">
+      {/* SEO Helmet */}
+      <Helmet>
+        <title>Rostov University Dormitories - Comfortable Student Accommodation</title>
+        <meta
+          name="description"
+          content="Explore the various dormitory buildings of Rostov University with fully furnished rooms, 24/7 security, cafeteria, and all other essential amenities for international students."
+        />
+        <meta
+          name="keywords"
+          content="Rostov University dormitories, student accommodations, student living, international students, Rostov University housing"
+        />
+        <meta name="robots" content="index, follow" />
+      </Helmet>
+
       {/* Page Heading */}
       <div className="text-center mb-12">
         <h1 className="text-4xl font-bold text-[#306185]">Rostov University Dormitories</h1>
@@ -44,7 +58,7 @@ const Dormitories = () => {
               <p className="text-gray-500 mt-2">{dorm.description}</p>
               <div className="mt-4">
                 <a
-                  href={commonPdfLink}  // Using the common PDF link
+                  href={commonPdfLink}
                   download
                   className="inline-block bg-[#306185] text-white px-4 py-2 rounded-full shadow hover:bg-blue-700 transition duration-300"
                 >
