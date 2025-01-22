@@ -116,7 +116,7 @@ const App = () => {
             <div className="bg-white p-8 rounded-lg max-w-md w-full animate__animated animate__fadeIn animate__delay-0.5s">
               <div className="flex justify-between items-center mb-4">
                 <div className="flex-grow flex justify-center">
-                  <img src={logo} className="w-20 h-20 -ml-8 lg:-ml-16" alt="Logo" />
+                  <img src={logo} className="w-20 h-20 -ml-8 lg:-ml-4" alt="Logo" />
                 </div>
                 <button onClick={closePopup} className="text-gray-600 text-xl -mt-28 -mr-6 font-semibold">
                   &times;
