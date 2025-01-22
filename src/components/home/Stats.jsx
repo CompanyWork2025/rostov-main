@@ -80,7 +80,7 @@ function StatsGrid() {
             </div>
             <div className="flex items-center bg-blue-600 text-white rounded-lg p-6 w-full lg:w-[40%]">
               <div className="flex-1">
-                <h1 className="text-2xl lg:text-4xl font-bold">5 200+</h1>
+                <h1 className="text-2xl lg:text-4xl font-bold">1500+</h1>
                 <p className="mt-2 text-md lg:text-lg">international students</p>
               </div>
               <img
