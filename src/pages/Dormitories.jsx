@@ -97,7 +97,7 @@ const Dormitories = () => {
         </p>
         <Link
           to="/contact"
-          className="inline-block px-6 py-3 bg-[#669d3f] rounded-lg shadow hover:bg-green-600 transition duration-300"
+          className="inline-block px-6 py-3 bg-[#FF931E] rounded-lg shadow hover:bg-green-600 transition duration-300"
         >
           Apply for Dormitory Accommodation
         </Link>

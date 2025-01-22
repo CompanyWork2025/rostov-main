@@ -239,7 +239,7 @@ const ContactForm = () => {
       </div>
 
       {/* Call to Action Section with adjusted margins */}
-      <div className=" mx-4 md:mx-28 bg-[#669d3f] mb-8 py-8 p-8 rounded-xl text-center">
+      <div className=" mx-4 md:mx-28 bg-[#306185] mb-8 py-8 p-8 rounded-xl text-center">
         <h2 className="text-2xl lg:text-3xl font-bold text-white mb-4">
           OUR INTERNATIONAL PARTNER
         </h2>

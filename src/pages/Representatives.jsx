@@ -71,7 +71,7 @@ const Representatives = () => {
                         Take the first step in becoming part of RSMU’s international student community. Reach out to our representatives and discover how RSMU can help you achieve your academic and professional goals.
                     </p>
                     {/* Using Link instead of href */}
-                    <Link to="/contact" className="inline-block px-8 py-3 text-white bg-[#306185] rounded-lg shadow hover:bg-blue-700 transition duration-300 transform hover:scale-105">
+                    <Link to="/contact" className="inline-block px-8 py-3 text-white bg-[#FF931E] rounded-lg shadow hover:bg-blue-700 transition duration-300 transform hover:scale-105">
                         Contact a Representative
                     </Link>
                 </div>
