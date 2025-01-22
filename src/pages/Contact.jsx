@@ -1,8 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { Helmet } from 'react-helmet';
+import emailjs from 'emailjs-com';
 import { Link } from 'react-router-dom';
 
 const ContactForm = () => {
+  // Set state for form data
   const [fullName, setFullName] = useState('');
   const [phone, setPhone] = useState('');
   const [city, setCity] = useState('');
@@ -11,44 +13,77 @@ const ContactForm = () => {
   const [pcbMarks, setPcbMarks] = useState('');
   const [neetMarks, setNeetMarks] = useState('');
   const [message, setMessage] = useState('');
+  const [formError, setFormError] = useState('');
+  
+  // Use useRef for form reference
+  const formRef = useRef();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log({ fullName, phone, email, message });
-    // TODO: Add API integration for submitting form data
+    setFormError(''); // Clear previous errors
+
+    // Validate fields
+    if (!fullName || !phone || !city || !state || !email || !pcbMarks || !neetMarks || !message) {
+      setFormError('All fields are required!');
+      return;
+    }
+
+    // Prepare email parameters
+    const templateParams = {
+      fullName,
+      phone,
+      city,
+      state,
+      email,
+      pcbMarks,
+      neetMarks,
+      message,
+    };
+
+    // Send email using EmailJS and formRef
+    emailjs.sendForm('service_nqcxku8', 'template_61kbbwr', formRef.current, 'VJBeG2pqOFep9BD36')
+      .then(
+        (result) => {
+          console.log('Message sent: ', result.text);
+          alert('Message sent successfully!');
+          // Reset form fields after successful submission
+          setFullName('');
+          setPhone('');
+          setCity('');
+          setState('');
+          setEmail('');
+          setPcbMarks('');
+          setNeetMarks('');
+          setMessage('');
+        },
+        (error) => {
+          console.error('Error sending message: ', error.text);
+          alert('Error sending message. Please try again.');
+        }
+      );
   };
 
   return (
     <>
       <Helmet>
         <title>Contact Us | RSMU University</title>
-        <meta
-          name="description"
-          content="Reach out to RSMU University for admissions, programs, campus queries, or general inquiries. Submit your message and we'll get back to you soon."
-        />
+        <meta name="description" content="Reach out to RSMU University for admissions, programs, campus queries, or general inquiries. Submit your message and we'll get back to you soon." />
         <meta name="keywords" content="RSMU contact, university support, admissions inquiry, contact form, RSMU University contact details" />
         <meta property="og:title" content="Contact Us | RSMU University" />
-        <meta
-          property="og:description"
-          content="Get in touch with RSMU University for inquiries about admissions, programs, or services. We are here to assist you."
-        />
+        <meta property="og:description" content="Get in touch with RSMU University for inquiries about admissions, programs, or services. We are here to assist you." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.rsmu-university.com/contact" />
         <meta property="og:image" content="https://example.com/contact-preview.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Contact Us | RSMU University" />
-        <meta
-          name="twitter:description"
-          content="Contact RSMU University for any inquiries. Let us help you with admissions, campus life, and support."
-        />
+        <meta name="twitter:description" content="Contact RSMU University for any inquiries. Let us help you with admissions, campus life, and support." />
         <link rel="canonical" href="https://www.rsmu-university.com/contact" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "ContactPage",
             name: "Contact Us - RSMU University",
-            description:
-              "Contact page for RSMU University to inquire about admissions, campus services, and academic programs.",
+            description: "Contact page for RSMU University to inquire about admissions, campus services, and academic programs.",
             url: "https://www.rsmu-university.com/contact",
             contactPoint: {
               "@type": "ContactPoint",
@@ -56,7 +91,7 @@ const ContactForm = () => {
               email: "support@rsmu-university.com",
               contactType: "Customer Service",
               areaServed: "Worldwide",
-              availableLanguage: ["English", "Russian"],
+              availableLanguage: ["English", "Russian"]
             },
           })}
         </script>
@@ -71,8 +106,13 @@ const ContactForm = () => {
             Have questions or need assistance? Fill out the form below, and we will get back to you promptly.
           </p>
         </div>
+
         <div className="w-full md:w-2/5 p-4">
-          <form className="space-y-4" onSubmit={handleSubmit} noValidate>
+          {formError && <p className="text-red-500">{formError}</p>}
+
+          {/* Form */}
+          <form className="space-y-4" ref={formRef} onSubmit={handleSubmit} noValidate>
+            {/* Personal Information */}
             <div className="flex space-x-4">
               <div className="w-1/2">
                 <label htmlFor="fullName" className="text-gray-700">
@@ -90,7 +130,6 @@ const ContactForm = () => {
                   required
                 />
               </div>
-
               <div className="w-1/2">
                 <label htmlFor="phone" className="text-gray-700">
                   Phone <span className="text-red-500">*</span>
@@ -109,6 +148,7 @@ const ContactForm = () => {
               </div>
             </div>
 
+            {/* Location Details */}
             <div className="flex space-x-4">
               <div className="w-1/2">
                 <label htmlFor="city" className="text-gray-700">
@@ -126,7 +166,6 @@ const ContactForm = () => {
                   required
                 />
               </div>
-
               <div className="w-1/2">
                 <label htmlFor="state" className="text-gray-700">
                   State <span className="text-red-500">*</span>
@@ -145,6 +184,7 @@ const ContactForm = () => {
               </div>
             </div>
 
+            {/* Educational Details */}
             <div className="flex space-x-4">
               <div className="w-1/2">
                 <label htmlFor="pcbMarks" className="text-gray-700">
@@ -162,7 +202,6 @@ const ContactForm = () => {
                   required
                 />
               </div>
-
               <div className="w-1/2">
                 <label htmlFor="neetMarks" className="text-gray-700">
                   NEET Marks <span className="text-red-500">*</span>
@@ -181,6 +220,7 @@ const ContactForm = () => {
               </div>
             </div>
 
+            {/* Contact Information */}
             <div>
               <label htmlFor="email" className="text-gray-700">
                 Email Address <span className="text-red-500">*</span>
@@ -198,6 +238,7 @@ const ContactForm = () => {
               />
             </div>
 
+            {/* Message Input */}
             <div>
               <label htmlFor="message" className="text-gray-700">
                 Message <span className="text-red-500">*</span>
@@ -214,6 +255,7 @@ const ContactForm = () => {
                 required
               ></textarea>
             </div>
+
             <button
               type="submit"
               className="px-6 py-3 bg-[#306185] w-full text-white rounded-lg hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 focus:outline-none"
@@ -223,8 +265,9 @@ const ContactForm = () => {
           </form>
         </div>
 
+        {/* Google Map Display */}
         <div className="w-full md:w-1/2 lg:p-24 flex justify-center">
-          <div className="rounded-lg overflow-hidden shadow-lg w-full h-96 ">
+          <div className="rounded-lg overflow-hidden shadow-lg w-full h-96">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3499.8652879979413!2d77.1475991755031!3d28.693676075631423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d03d92f45f1bb%3A0xf2fcd5bfa7590c08!2sThe%20RREC%20Team-MBBS%20in%20Russia%20%7C%20Direct%20Official%20Admission%20Partners%20%7C%20Top%20Medical%2C%20Technical%2C%20Federal%20Universities%20of%20Russia.!5e0!3m2!1sen!2sin!4v1737455159513!5m2!1sen!2sin"
               width="600"
@@ -239,7 +282,7 @@ const ContactForm = () => {
       </div>
 
       {/* Call to Action Section with adjusted margins */}
-      <div className=" mx-4 md:mx-28 bg-[#306185] mb-8 py-8 p-8 rounded-xl text-center">
+      <div className="mx-4 md:mx-28 bg-[#306185] mb-8 py-8 p-8 rounded-xl text-center">
         <h2 className="text-2xl lg:text-3xl font-bold text-white mb-4">
           OUR INTERNATIONAL PARTNER
         </h2>
@@ -248,7 +291,6 @@ const ContactForm = () => {
         </p>
         <div className="flex items-center justify-between">
           <div className="flex-1 text-left">
-            {/* Left-side Content */}
             <p className="text-md lg:text-lg text-white mb-8">
               Registered office address: Office no. 608, 6th floor, Aggarwal Cyber Plaza-1 Netaji Subhash Place, Pitampura, New Delhi - 110034 Delhi, India
             </p>
@@ -257,7 +299,6 @@ const ContactForm = () => {
             {/* Centered Content (Empty for now) */}
           </div>
           <div className="flex-1 text-right">
-            {/* Right-side Content */}
             <p className="text-md lg:text-lg text-white mb-8">
               Corporate office address: Office no. 709-710, 7th floor, P.P. Trade Center Netaji Subhash Place, Pitampura, New Delhi - 110034 Delhi, INDIA
             </p>
@@ -271,7 +312,6 @@ const ContactForm = () => {
           </p>
         </div>
       </div>
-
     </>
   );
 };
