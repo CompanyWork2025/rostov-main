@@ -35,7 +35,7 @@ const Navbar = () => {
               <span className="text-red-400 mr-2 bg-yellow-200 px-2 py-1 text-shadow-yellow font-bold rounded-md">
                 Breaking News:
               </span>
-                Admissions are open for 2025, Registration process has started.  New semester registrations are now open! Enroll today for a brighter future! Limited seats available, don't miss out on this opportunity! Admission deadline approaching soon. Apply today for a successful career ahead!
+                Admissions are open for 2025, Registration process has started. Enroll today for a brighter future! Limited seats available, don't miss out on this opportunity! Admission deadline approaching soon. Apply today for a successful career ahead!
             </p>
           </div>
 

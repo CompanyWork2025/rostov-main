@@ -17,7 +17,7 @@ const Representatives = () => {
             {/* Top Banner Image */}
             <div className="relative w-full lg:h-[550px]">
                 <img
-                    src={res}
+                    src="https://medik-kerch.ru/storages/2021/12/infermiere3.jpg"
                     alt="RSMU University Representatives"
                     className="w-full h-full object-fit"
                 />
