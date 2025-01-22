@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import logo from "./assets/logo.png";
 import Navbar from "./components/shared/Navbar"; 
@@ -24,13 +24,16 @@ import Recognition from "./pages/Recognition";
 
 const App = () => {
   const [showPopup, setShowPopup] = useState(false);
-  
-  // State to capture the form inputs
   const [form, setForm] = useState({
     name: '',
     email: '',
     message: ''
   });
+  const [submissionStatus, setSubmissionStatus] = useState(""); // For success/error message
+  const [formErrors, setFormErrors] = useState({}); // For storing form validation errors
+
+  // Ref for the form element
+  const formRef = useRef(null);
 
   const openPopup = () => setShowPopup(true);
   const closePopup = () => setShowPopup(false);
@@ -44,26 +47,45 @@ const App = () => {
     });
   };
 
+  // Validate form before submission
+  const validateForm = () => {
+    let errors = {};
+    if (!form.name) errors.name = "Name is required.";
+    if (!form.email) errors.email = "Email is required.";
+    else if (!/\S+@\S+\.\S+/.test(form.email)) errors.email = "Email address is invalid.";
+    if (!form.message) errors.message = "Message is required.";
+
+    setFormErrors(errors);
+    return Object.keys(errors).length === 0; // Return true if no errors
+  };
+
   // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
+    
+    if (!validateForm()) {
+      // If the form validation fails, return and don't send the email.
+      return;
+    }
 
-    emailjs.sendForm('service_nqcxku8', 'template_gla2qvi', form, 'VJBeG2pqOFep9BD36')
+    // Sending form using emailjs with formRef as the form reference
+    emailjs.sendForm('service_nqcxku8', 'template_gla2qvi', formRef.current, 'VJBeG2pqOFep9BD36')
       .then((result) => {
         console.log(result.text);
-        // You can also show a success message here
+        // Set success message when the submission is successful
+        setSubmissionStatus("Your message has been successfully submitted. Thank you!");
+        // Clear form fields after submission
+        setForm({
+          name: '',
+          email: '',
+          message: '',
+        });
+        setFormErrors({});
       }, (error) => {
         console.log(error.text);
-        // Show an error message
+        // Set error message when there's a failure in submission
+        setSubmissionStatus("Oops, something went wrong. Please try again.");
       });
-
-    // Reset form after submission
-    setForm({
-      name: '',
-      email: '',
-      message: '',
-    });
-    closePopup();
   };
 
   return (
@@ -124,48 +146,58 @@ const App = () => {
               </div>
 
               {/* Form Fields */}
-              <form className="space-y-6" onSubmit={handleSubmit}>
+              <form ref={formRef} className="space-y-6" onSubmit={handleSubmit}>
                 <div className="mb-4">
                   <input
                     type="text"
                     name="name"
-                    className="w-full p-4 border border-gray-300 rounded-xl focus:outline-none focus:border-[#306185] transition duration-300"
+                    className="w-full p-4 border border-gray-300 rounded-xl"
                     placeholder="Your Full Name"
                     value={form.name}
                     onChange={handleChange}
                   />
+                  {formErrors.name && <div className="text-red-500 text-sm">{formErrors.name}</div>}
                 </div>
 
                 <div className="mb-4">
                   <input
                     type="email"
                     name="email"
-                    className="w-full p-4 border border-gray-300 rounded-xl focus:outline-none focus:border-[#306185] transition duration-300"
+                    className="w-full p-4 border border-gray-300 rounded-xl"
                     placeholder="Your Email Address"
                     value={form.email}
                     onChange={handleChange}
                   />
+                  {formErrors.email && <div className="text-red-500 text-sm">{formErrors.email}</div>}
                 </div>
 
                 <div className="mb-4">
                   <textarea
                     name="message"
-                    className="w-full p-4 border border-gray-300 rounded-xl focus:outline-none focus:border-[#306185] transition duration-300"
+                    className="w-full p-4 border border-gray-300 rounded-xl"
                     rows="4"
                     placeholder="Your Message"
                     value={form.message}
                     onChange={handleChange}
                   ></textarea>
+                  {formErrors.message && <div className="text-red-500 text-sm">{formErrors.message}</div>}
                 </div>
 
                 <div className="flex justify-center text-right">
                   <button
                     type="submit"
-                    className="bg-[#306185] text-white px-8 py-2 rounded-full hover:bg-[#204d69] transition duration-300"
+                    className="bg-[#306185] text-white px-8 py-2 rounded-full"
                   >
                     Submit
                   </button>
                 </div>
+
+                {/* Success or Error Message */}
+                {submissionStatus && (
+                  <div className="text-center text-green-500 font-semibold py-4 mt-4">
+                    {submissionStatus}
+                  </div>
+                )}
               </form>
             </div>
           </div>
