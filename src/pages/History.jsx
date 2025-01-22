@@ -25,7 +25,7 @@ const History = () => {
       <div className="px-6 py-8 max-w-7xl mx-auto">
         {/* Heading */}
         <h2 className="text-2xl md:text-3xl text-center lg:text-left font-semibold mb-6">Rostov State Medical University</h2>
-        <p className='mb-8 text-center lg:text-left'>
+        <p className='mb-8 text-center text-justify lg:text-left'>
           <p>
             RSMU University has a rich history rooted in the vision to provide high-quality education and contribute to scientific
             research. The institution was founded with the goal of bridging knowledge gaps, fostering talent, and preparing students
@@ -35,7 +35,7 @@ const History = () => {
         <h2 className="text-2xl md:text-3xl text-center lg:text-left font-semibold mb-6">History of Rostov State Medical University, Russia</h2>
 
         {/* Paragraphs with Gaps */}
-        <div className="space-y-6 text-center lg:text-left text-gray-700">
+        <div className="space-y-6 text-justify text-gray-700">
           <p>
             In 1915, the Division of Medicine at the Russian Warsaw University was moved to Rostov on Don and that gave rise to the present-day Rostov State Medical University. It was initially formed as a department and later transformed into a medical Institute in 1930. There were about 295 graduating doctors in the first graduating class of the newly formed school. Rostov State Medical University proves to be one of the oldest Higher Medical educational establishments in Russia. The history of its foundation is significantly different from the history of other medical institutions in Russia. In 1915 the Russian Warsaw University was evacuated from Warsaw to Rostov-on-Don where the University had become the Donskoy University. The best representatives from the medical institutions of Warsaw, Moscow, Saint-Petersburg, and Kazan had gathered in its medical faculty and founded its own unique Rostov medical school that had become one of the best in Russia. Later on, the University’s medical faculty and Rostov Medical Women Institute were united and became the largest center of medical science and training of medical personnel in the South of Russia.
           </p>
@@ -46,6 +46,7 @@ const History = () => {
             The University operates 91 departments, which employs over 800 people teaching staff, more than 130 doctors, professors, about 500 candidates. The university engaged in research and clinical activities, and 31 academicians, corresponding members of the Russian Academy of Medical Sciences. 52 professors are members of other Russian and International academies, 9 employees are Honored Scientists of Russia, 26 – Honorary Doctor of Russian Federation, and 10 – Honored Workers of Higher School of the Russian Federation.
           </p>
         </div>
+
       </div>
 
       {/* Bottom Section */}
