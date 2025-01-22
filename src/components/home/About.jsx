@@ -35,7 +35,7 @@ const About = () => {
               </p>
               <p className="text-lg px-4 lg:px-0">
                 Modern infrastructure: comfortable classrooms, laboratories,
-                libraries, gyms, dormitories - everything is created for
+                libraries, dormitories - everything is created for
                 comfortable study and life of students.
               </p>
             </div>

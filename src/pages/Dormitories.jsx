@@ -1,24 +1,28 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
+import dorm1 from '../assets/hostel1.png';
+import dorm2 from '../assets/hostel2.png';
+import dorm3 from '../assets/hostel.jpeg';
 
 const Dormitories = () => {
   const dormitoryInfo = [
     {
-      image: 'https://i.ytimg.com/vi/_yoy_HK5NeA/maxresdefault.jpg',
+      image: dorm1,
       title: 'Dormitory Building 1',
       description: 'Comfortable living spaces with access to all amenities. Fully furnished rooms, and security services available.',
     },
     {
-      image: 'https://i.ytimg.com/vi/Nm-Iox9uDdE/maxresdefault.jpg',
+      image: dorm2,
       title: 'Dormitory Building 2',
       description: 'Well-equipped study lounges, common areas for students, and 24/7 medical assistance available.',
     },
     {
-      image: 'https://i0.wp.com/abroadeduco.com/wp-content/uploads/2021/11/hostel-room-russia.jpg?ssl=1',
+      image: dorm3,
       title: 'Dormitory Building 3',
-      description: 'Cafeteria, laundry services, and dormitory Wi-Fi available. Experience student living at its best.',
-    },
+      description: 'The dormitory for Rostov State Medical University offers a comfortable and supportive living environment.',
+    }
+    
   ];
 
   const commonPdfLink = 'https://rostgmu.ru/wp-content/uploads/2023/07/Dormitories-for-International-Students.pdf';
@@ -41,8 +45,8 @@ const Dormitories = () => {
 
       {/* Page Heading */}
       <div className="text-center mb-12">
-        <h1 className="text-4xl font-bold text-[#306185]">Rostov University Dormitories</h1>
-        <p className="text-gray-600 mt-4">Discover the comfort and convenience of our campus dorms.</p>
+        <h1 className="text-2xl md:text-4xl font-bold text-[#306185]">Rostov University Dormitories</h1>
+        <p className="text-gray-600 mt-4">Discover the comfort and convenience of our campus dorms. RSMU have five dormitories, from them two are in campus of university hostel 1 & 2.</p>
       </div>
 
       {/* Image Gallery Section */}
@@ -56,27 +60,19 @@ const Dormitories = () => {
             <div className="p-6">
               <h3 className="text-2xl font-semibold text-[#306185]">{dorm.title}</h3>
               <p className="text-gray-500 mt-2">{dorm.description}</p>
-              <div className="mt-4">
-                <a
-                  href={commonPdfLink}
-                  download
-                  className="inline-block bg-[#306185] text-white px-4 py-2 rounded-full shadow hover:bg-blue-700 transition duration-300"
-                >
-                  Download Brochure
-                </a>
-              </div>
+             
             </div>
           </div>
         ))}
       </section>
 
       {/* FAQ Section */}
-      <div className="mt-16 p-8 bg-[#f0f4f7] rounded-lg">
+      <div className="mt-8 p-8 bg-[#f0f4f7] rounded-lg">
         <h2 className="text-3xl font-semibold text-[#306185] text-center">Frequently Asked Questions (FAQs)</h2>
         <div className="space-y-6 mt-6">
           <div className="text-gray-700">
             <h4 className="font-bold">What facilities are provided in the dorms?</h4>
-            <p>Cafeteria, study lounges, Wi-Fi, 24/7 security, laundry, and more.</p>
+            <p>Cafeteria nearby, common kitchens on every floors, study library, security, laundry and more.</p>
           </div>
           <div className="text-gray-700">
             <h4 className="font-bold">Are the dormitories secure?</h4>
@@ -93,7 +89,7 @@ const Dormitories = () => {
       <div className="mt-16 mb-6 bg-[#306185] p-8 text-center text-white rounded-lg">
         <h2 className="text-2xl lg:text-3xl font-bold mb-6">Ready to Live the Campus Life?</h2>
         <p className="text-lg mb-8">
-          Apply for dormitory accommodations now and secure your spot on campus for the upcoming semester!
+          Apply for the study medicine at RSMU, secure your dormitory accommodation now and secure your spot on campus.
         </p>
         <Link
           to="/contact"

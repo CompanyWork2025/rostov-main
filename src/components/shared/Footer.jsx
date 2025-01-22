@@ -49,7 +49,7 @@ const Footer = () => (
         </div>
       </div>
     </div>
-    <p className='text-center mt-8'>© 2025 Rostov State Medical University. All Rights Reserved.</p>
+    <p className='text-center mt-8'>© 2025 - Informational Website of International Students - Rostov State Medical University.</p>
   </footer>
 );
 

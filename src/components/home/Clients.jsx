@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 const Clients = () => {
   const gridItems = [
     { id: 1, image: "https://www.rostgmu.net/images/c1.webp", title: "Course 1" },
-    { id: 2, image: "https://www.rostgmu.net/images/c2.webp", title: "Course 2" },
+    { id: 2, image: "https://www.rostgmu.net/images/c5.webp", title: "Course 2" },
     { id: 3, image: "https://www.rostgmu.net/images/c3.webp", title: "Course 3" },
     { id: 4, image: "https://www.rostgmu.net/images/c4.webp", title: "Course 4" },
-    { id: 5, image: "https://www.rostgmu.net/images/c5.webp", title: "Course 5" },
+    { id: 5, image: "https://www.rostgmu.net/images/c2.webp", title: "Course 5" },
     { id: 6, image: "https://www.rostgmu.net/images/c7.webp", title: "Course 6" },
     { id: 7, image: "https://www.rostgmu.net/images/c8.webp", title: "Course 7" },
     { id: 8, image: "https://www.rostgmu.net/images/c14.webp", title: "Course 8" },

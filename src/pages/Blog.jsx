@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom'; // React Router for navigation
 import { Helmet } from 'react-helmet'; // Importing Helmet for SEO
+import blog6 from '../assets/blog6.jpeg';
 
 const Blog = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -45,7 +46,7 @@ const Blog = () => {
     },
     {
       title: 'RSMU’s State-of-the-Art Facilities',
-      image: 'https://nixstudyabroad.com/wp-content/uploads/2022/01/rostov-state-medical-university.jpg',
+      image: blog6,
       description: 'RSMU boasts a campus equipped with modern medical teaching tools...',
       fullDescription: 'We pride ourselves on our state-of-the-art facilities at RSMU...',
       date: '2025-01-06',
