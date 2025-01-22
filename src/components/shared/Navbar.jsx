@@ -19,16 +19,31 @@ const Navbar = () => {
   };
 
   useEffect(() => {
-    window.scrollTo(0, 0);  // Scroll to the top
+    window.scrollTo(0, 0);  // Scroll to the top when the route changes
   }, [location]);  // Dependency array listens to route changes
 
+
+  
   return (
     <>
+      {/* Ticker Section with Breaking News */}
       <div className="bg-[#306185] text-white py-2">
-        <div className="max-w-screen-xl mx-auto font-semibold px-6 text-right">
-          <p>Admission Helpline: +91-7669533991</p>
+        <div className="max-w-screen-xl mx-auto font-semibold px-6 flex items-center">
+          {/* Moving Text on the left */}
+          <div className="overflow-hidden w-[70%] animate-fadeIn">
+            <p className="moving-text inline-block whitespace-nowrap pr-[100%] animate-ticker opacity-100">
+              <span className="text-red-400 text-shadow-yellow">Breaking News: </span>
+              New semester registrations are now open! Enroll today for a brighter future! Limited seats available, don't miss out on this opportunity! Admission deadline approaching soon. Apply today for a successful career ahead!
+            </p>
+          </div>
+
+          {/* Admission Helpline on the right */}
+          <p className="ml-auto">Admission Helpline: +91-7669533991</p>
         </div>
       </div>
+
+
+
 
       <nav className="sticky top-0 z-50 bg-white shadow-lg shadow-blue/20 transition-shadow">
         <div className="max-w-screen-xl mx-auto px-6 py-4 lg:py-0 flex justify-between items-center">
@@ -73,14 +88,14 @@ const Navbar = () => {
               RSMU Today
             </NavLink>
             <NavLink
-                to="/dormitories"
-                onClick={toggleMenu}
-                className={({ isActive }) =>
-                  isActive ? 'font-bold text-[#306185] block text-center' : 'text-gray-500 hover:text-blue-500 block text-center'
-                }
-              >
-                Dormitories
-              </NavLink>
+              to="/dormitories"
+              onClick={toggleMenu}
+              className={({ isActive }) =>
+                isActive ? 'font-bold text-[#306185] block text-center' : 'text-gray-500 hover:text-blue-500 block text-center'
+              }
+            >
+              Dormitories
+            </NavLink>
             <NavLink
               to="/representatives"
               className={({ isActive }) =>
