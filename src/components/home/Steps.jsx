@@ -26,23 +26,25 @@ const Steps = () => {
                             Eligibility Criteria:
                             <br />
                             <br />
-                            * Health: If you have a serious medical illness or chronic medical condition, please contact University officials before arrival.
-                            English Level: To study at RSMU, there is no need to provide an English language certificate. However, applicants with poor English skills may not be eligible for studies.
+                            To study at RSMU, there is no need to provide an English language certificate. However, applicants with poor English skills may not be eligible for studies in RSMU.
                             <br />
                             <br />
-                            You need to prepare and send the following documents via email or the form below:
+                            Student need to prepare and send the following documents via email or for the same student can contact our official Rep. RREC:
                             <br />
                             <br />
                             1. Copy of the international passport (pages with the photo, date of expiration, place of birth, etc.)
                             <br />
                             <br />
-                            2. Documents confirming your previous level of education.
+                            2. Certificates of Higher & Secondary School.
                             <br />
                             <br />
-                            3. Health fitness certificate (including vaccination information).
+                            3. NEET Qualified Result (For Indian Students Only).
                             <br />
                             <br />
-                            Please fill out the following forms: visa invitation inquiry form and application form, and send them via the form below or email to the University’s admission office: admission@rostgmu.ru
+                            4. Health fitness certificate (including vaccination information).
+                            <br />
+                            <br />
+                            Please fill out the application form provided by our Rep. RREC, invitation form, and application form, and send them via the form below or email to the University’s Rep. office: rostsmu@gmail.com
                         </p>
                     </div>
                 </div>
@@ -57,11 +59,14 @@ const Steps = () => {
                         />
                     </div>
                     <div className="flex flex-col order-0 sm:order-1">
-                        <h3 className="text-xl font-semibold mb-4">Step 2 — Receive a student's invitation (takes about 30 days) and apply for visa</h3>
+                        <h3 className="text-xl font-semibold mb-4">Step 2 — Receive Admission Provisional Letter & Receive a student's invitation (takes about 25-30 days) and can apply for a visa
+                        </h3>
                         <p className="text-gray-600 text-sm sm:text-base">
-                            After your application is processed, you will receive a student's invitation in about 30 days via email. Once you receive your invitation, you can apply for a visa to enter Russia.
+                            After verification of docs and eligibility check, the student will receive a provisional letter of admission within 3-5 working days. 
                             <br /><br />
-                            Note: Receiving the invitation is not enough to enter Russia. The visa approval process is essential.
+                            After your application is processed, you will receive a student's invitation via email in about 25-30 days. Once you receive your invitation, you can apply for a visa to enter Russia.
+                            <br /><br />
+                            Note: Receiving an invitation from the university is not enough to enter the Russian Federation. The visa approval process is essential; the student or representative needs to take care of the process.
                         </p>
                     </div>
                 </div>
