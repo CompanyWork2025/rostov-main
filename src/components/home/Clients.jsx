@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import client from "../../assets/client.png";
 
 const Clients = () => {
   const gridItems = [
@@ -7,7 +8,7 @@ const Clients = () => {
     { id: 2, image: "https://www.rostgmu.net/images/c5.webp", title: "Course 2" },
     { id: 3, image: "https://www.rostgmu.net/images/c3.webp", title: "Course 3" },
     { id: 4, image: "https://www.rostgmu.net/images/c4.webp", title: "Course 4" },
-    { id: 5, image: "https://www.rostgmu.net/images/c2.webp", title: "Course 5" },
+    { id: 5, image: client, title: "Course 5" },
     { id: 6, image: "https://www.rostgmu.net/images/c7.webp", title: "Course 6" },
     { id: 7, image: "https://www.rostgmu.net/images/c8.webp", title: "Course 7" },
     { id: 8, image: "https://www.rostgmu.net/images/c14.webp", title: "Course 8" },
@@ -25,7 +26,7 @@ const Clients = () => {
     <div className="flex flex-col items-center justify-center h-auto bg-gray-100 p-6 lg:px-20">
       {/* Main Heading */}
       <h1 className="text-2xl lg:text-4xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 mb-12 text-center">
-        Rostov University is recognized by WHO and is prominently represented in both international and domestic rankings.
+      Rostov State Medical University is recognized by Minsitry of Health RF, Ministry of Education RF, WHO and is prominently represented in both international and domestic rankings.
       </h1>
 
       {/* Grid View */}
