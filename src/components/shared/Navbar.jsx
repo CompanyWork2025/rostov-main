@@ -40,7 +40,7 @@ const Navbar = () => {
           </div>
 
           {/* Admission Helpline on the right */}
-          <p className="text-green-500 bg-white px-2 py-1 font-semibold rounded-md -ml-48 md:ml-auto">
+          <p className="text-green-500 bg-white px-2 py-1 font-semibold rounded-md -ml-52 md:ml-auto">
             Admission Helpline: +91-7669533991
           </p>
 
@@ -51,16 +51,16 @@ const Navbar = () => {
 
 
       <nav className="sticky top-0 z-50 bg-white shadow-lg shadow-blue/20 transition-shadow">
-        <div className="max-w-screen-xl mx-auto px-6 py-4 lg:py-0 flex justify-between items-center">
+        <div className="max-w-screen-xl mx-auto px-6 md:py-4 lg:py-0 flex justify-between items-center">
           {/* Logo and Text Container */}
           <NavLink to="/" className="flex items-center space-x-4">
             <img
               src={logo}
-              className="w-10 h-10 lg:w-20 lg:h-20"
+              className="w-14 h-14 lg:w-20 lg:h-20"
               alt="Logo"
             />
             <div>
-              <p className="text-sm lg:text-xl font-semibold text-gray-600">
+              <p className="text-md lg:text-xl font-semibold text-gray-600">
                 Admission RSMU 2025
               </p>
             </div>
