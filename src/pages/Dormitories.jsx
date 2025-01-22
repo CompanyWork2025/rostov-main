@@ -1,29 +1,41 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
-import dorm1 from '../assets/hostel1.png';
-import dorm2 from '../assets/hostel2.png';
-import dorm3 from '../assets/hostel.jpeg';
+import dorm1 from '../assets/hostel1.jpeg';
+import dorm2 from '../assets/hostel2.jpeg';
+import dorm3 from '../assets/hostel3.jpeg';
+import dorm4 from '../assets/hostel4.png';
+import dorm5 from '../assets/hostel5.png';
 
 const Dormitories = () => {
   const dormitoryInfo = [
     {
       image: dorm1,
       title: 'Dormitory Building 1',
-      description: 'Comfortable living spaces with access to all amenities. Fully furnished rooms, and security services available.',
+      description: 'Designed for comfort, this dormitory provides spacious rooms, high-speed Wi-Fi, and fully furnished living areas for a convenient and pleasant stay.',
     },
     {
       image: dorm2,
       title: 'Dormitory Building 2',
-      description: 'Well-equipped study lounges, common areas for students, and 24/7 medical assistance available.',
+      description: 'A hub for academic success, featuring study lounges, collaborative common rooms, and round-the-clock medical support for students.',
     },
     {
       image: dorm3,
       title: 'Dormitory Building 3',
-      description: 'The dormitory for Rostov State Medical University offers a comfortable and supportive living environment.',
+      description: 'Known for its quiet and supportive atmosphere, perfect for focused study and relaxation after a long day at the university.',
+    },
+    {
+      image: dorm4,
+      title: 'Dormitory Building 4',
+      description: 'Equipped with modern facilities, including shared kitchens, recreational spaces, and a welcoming community for all students.',
+    },
+    {
+      image: dorm5,
+      title: 'Dormitory Building 5',
+      description: 'A blend of functionality and comfort, offering essential amenities to ensure students feel right at home while pursuing their education.',
     }
-    
   ];
+  
 
   const commonPdfLink = 'https://rostgmu.ru/wp-content/uploads/2023/07/Dormitories-for-International-Students.pdf';
 

@@ -15,7 +15,7 @@ const Representatives = () => {
             </Helmet>
 
             {/* Top Banner Image */}
-            <div className="relative w-full lg:h-[500px]">
+            <div className="relative w-full lg:h-[550px]">
                 <img
                     src={res}
                     alt="RSMU University Representatives"

@@ -85,12 +85,12 @@ const Blog = () => {
       {/* Top Banner */}
       <div className="relative w-full lg:h-64 lg:mb-10">
         <img
-          src="https://media.istockphoto.com/id/1220573371/photo/minimal-work-space-creative-flat-lay-photo-of-workspace-desk-top-view-office-desk-with-laptop.jpg?s=612x612&w=0&k=20&c=xmrSzPD4LCRhPD4L5TlttC88sSYe9Pc3J2ZnxCMzzyQ="
+          src="https://png.pngtree.com/thumb_back/fh260/background/20210115/pngtree-bright-and-simple-light-blue-banner-background-image_519888.jpg"
           alt="RSMU University Banner"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center">
-          <h1 className="text-white text-2xl lg:text-5xl font-bold">Blogs</h1>
+        <div className="absolute inset-0 bg-black bg-opacity-0 flex justify-center items-center">
+          <h1 className="text-[#306185] text-2xl lg:text-5xl font-bold">Our Blogs</h1>
         </div>
       </div>
 

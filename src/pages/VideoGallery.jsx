@@ -87,13 +87,13 @@ const VideoGallery = () => {
       <div className="bg-gray-100">
         <div className="relative w-full h-64">
           <img
-            src="https://i.pinimg.com/originals/16/03/fb/1603fb7077abb9093f4af305b4e5ce79.gif"
+            src="https://png.pngtree.com/thumb_back/fh260/background/20210115/pngtree-bright-and-simple-light-blue-banner-background-image_519888.jpg"
             alt="RSMU University Banner showcasing the main campus"
             className="w-full h-full object-cover"
             loading="eager"
           />
-          <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-            <h1 className="text-2xl lg:text-4xl text-white font-bold">Welcome to Our Video Gallery</h1>
+          <div className="absolute inset-0 bg-black bg-opacity-0 flex items-center justify-center">
+            <h1 className="text-2xl lg:text-4xl text-[#306185] font-bold">Welcome to Our Video Gallery</h1>
           </div>
         </div>
 

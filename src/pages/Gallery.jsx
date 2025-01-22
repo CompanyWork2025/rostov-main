@@ -19,6 +19,7 @@ import img14 from '../assets/gallery14.jpeg';
 import img15 from '../assets/gallery15.jpeg';
 import img16 from '../assets/gallery16.jpeg';
 import img17 from '../assets/gallery17.jpeg';
+import img18 from '../assets/gallery19.jpeg';
 
 // Create images array
 const images = [
@@ -39,6 +40,7 @@ const images = [
   { id: 15, src: img15, alt: 'Image 15 Description', caption: 'Image 15' },
   { id: 16, src: img16, alt: 'Image 16 Description', caption: 'Image 16' },
   { id: 17, src: img17, alt: 'Image 17 Description', caption: 'Image 17' },
+  { id: 18, src: img18, alt: 'Image 18 Description', caption: 'Image 18' },
 ];
 
 const Gallery = () => {
@@ -72,13 +74,13 @@ const Gallery = () => {
       <div className="bg-gray-100">
         <div className="relative w-full h-64">
           <img
-            src="https://gmfadmission.in/wp-content/uploads/2022/08/rostov-state-medical-university.jpeg"
+            src="https://png.pngtree.com/thumb_back/fh260/background/20210115/pngtree-bright-and-simple-light-blue-banner-background-image_519888.jpg"
             alt="RSMU University Banner showcasing the main campus"
             className="w-full h-full object-cover"
             loading="eager"
           />
-          <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-            <h1 className="text-2xl lg:text-4xl text-white font-bold">Welcome to Our Photo Gallery</h1>
+          <div className="absolute inset-0 bg-black bg-opacity-0 flex items-center justify-center">
+            <h1 className="text-2xl lg:text-4xl text-[#306185] font-bold">Welcome to Our Photo Gallery</h1>
           </div>
         </div>
 
