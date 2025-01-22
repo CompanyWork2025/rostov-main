@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowUp, faArrowDown } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 import { Helmet } from "react-helmet";
 import image1 from "../../assets/team.webp";
@@ -127,36 +129,39 @@ const Hero = () => {
 
       {/* Info Boxes */}
       <main className="container mx-auto px-6 lg:px-20 relative z-20 mt-80 lg:-mt-10">
-      <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        {["Leading University", "Overview of RSMU", "High Quality Education", "Great Choice"].map((title, index) => (
-          <article
-            key={index}
-            className={`bg-white shadow-lg rounded-lg p-6 text-center border border-gray-200 animate-slideUp delay-${index * 200} flex flex-col`}
-          >
-            <h2 className="text-xl font-semibold text-red-500 mb-3">{title}</h2>
-            <p
-              className={`text-gray-600 text-sm flex-grow overflow-hidden transition-all duration-500 ${
-                isContentExpanded[index] ? 'max-h-full' : 'max-h-28'
-              }`}
+        <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {["Leading University", "Overview of RSMU", "High Quality Education", "Great Choice"].map((title, index) => (
+            <article
+              key={index}
+              className={`bg-white shadow-lg rounded-lg p-6 text-center border border-gray-200 animate-slideUp delay-${index * 200} flex flex-col`}
             >
-              {index === 0
-                ? "Rostov State Medical University, Russia – A Gateway For An Extraordinary Medical Education. Russia is reckoned as one of the most popular destinations for studying medicine. It is consistently preferred as one of the frontline choices to pursue medical education for many aspirants in India. Well, there are many NMC (National Medical Commission) recognized and government-affiliated medical universities in Russia, however, Rostov State Medical University is irresistibly a supreme choice for those who want to be assured of grabbing world-class medical education at affordable cost and are willing to complete their MBBS with complete knowledge in their profession."
-                : index === 1
-                ? "RostSMU is among one of the oldest and top medical universities in Russia. Rostov University came into existence in 1930. It is also known as RostSMU or RostGMU. This is a government medical education institute that is located in Rostov-on-Don City, Russia and it is the largest Government Medical University in South Russian Federation. It is seventh oldest medical university of Russian Federation. RostSMU will be an exciting and promising option for medical education in Russia. RREC is the official representative of RostSMU will always be there to provide all assistance and consultation for the admission in RostSMU. Feel a free to contact RREC  for free consultation."
-                : index === 2
-                ? "RSMU operates more than 100 Departments. More than 900+ teachers are constantly working introducing innovations and interactive forms of learning. Among them are 180+ Doctors of Medical Sciences, 95+ professors and 480+ PH.Ds. The Honoured Cultural Worker of the Russian Federation, holders of the honorary titles of Russia and world-renowned scientists carry out educational activities at the university on modern scientific, matierial and technical base. RostSMU is an International university. The students of more than a hundred nationalities of the world are trained here."
-                : "RSMU is well known throughout the Russian Federation and among the world. Renowned for scientific departments in Surgery, Urology, Oncology, Cardiology, Nephrology, Neurosurgery, Morphology, and Dermatology. On campus' Rostov State Medical University is one of the few medical educational organizations in Russia with its own clinic with 675 hospital cots, a dental clinic, a diagnostic, treatment clinic, simulation center, and Military training center that trains specialists in military medical specialties."}
-            </p>
-            <button
-              className="text-blue-500 mt-auto text-sm"
-              onClick={() => toggleContent(index)}
-            >
-              {isContentExpanded[index] ? "⬆️" : "⬇️"}
-            </button>
-          </article>
-        ))}
-      </section>
-    </main>
+              <h2 className="text-xl font-semibold text-red-500 mb-3">{title}</h2>
+              <p
+                className={`text-gray-600 text-sm flex-grow overflow-hidden transition-all duration-500 ${isContentExpanded[index] ? 'max-h-full' : 'max-h-28'
+                  }`}
+              >
+                {index === 0
+                  ? "Rostov State Medical University, Russia – A Gateway For An Extraordinary Medical Education. Russia is reckoned as one of the most popular destinations for studying medicine. It is consistently preferred as one of the frontline choices to pursue medical education for many aspirants in India. Well, there are many NMC (National Medical Commission) recognized and government-affiliated medical universities in Russia, however, Rostov State Medical University is irresistibly a supreme choice for those who want to be assured of grabbing world-class medical education at affordable cost and are willing to complete their MBBS with complete knowledge in their profession."
+                  : index === 1
+                    ? "RostSMU is among one of the oldest and top medical universities in Russia. Rostov University came into existence in 1930. It is also known as RostSMU or RostGMU. This is a government medical education institute that is located in Rostov-on-Don City, Russia and it is the largest Government Medical University in South Russian Federation. It is seventh oldest medical university of Russian Federation. RostSMU will be an exciting and promising option for medical education in Russia. RREC is the official representative of RostSMU will always be there to provide all assistance and consultation for the admission in RostSMU. Feel a free to contact RREC  for free consultation."
+                    : index === 2
+                      ? "RSMU operates more than 100 Departments. More than 900+ teachers are constantly working introducing innovations and interactive forms of learning. Among them are 180+ Doctors of Medical Sciences, 95+ professors and 480+ PH.Ds. The Honoured Cultural Worker of the Russian Federation, holders of the honorary titles of Russia and world-renowned scientists carry out educational activities at the university on modern scientific, matierial and technical base. RostSMU is an International university. The students of more than a hundred nationalities of the world are trained here."
+                      : "RSMU is well known throughout the Russian Federation and among the world. Renowned for scientific departments in Surgery, Urology, Oncology, Cardiology, Nephrology, Neurosurgery, Morphology, and Dermatology. On campus' Rostov State Medical University is one of the few medical educational organizations in Russia with its own clinic with 675 hospital cots, a dental clinic, a diagnostic, treatment clinic, simulation center, and Military training center that trains specialists in military medical specialties."}
+              </p>
+              <button
+                className="text-blue-500 pt-2 mt-auto text-sm"
+                onClick={() => toggleContent(index)}
+              >
+                {isContentExpanded[index] ? (
+                  <FontAwesomeIcon icon={faArrowUp} />
+                ) : (
+                  <FontAwesomeIcon icon={faArrowDown} />
+                )}
+              </button>
+            </article>
+          ))}
+        </section>
+      </main>
     </>
   );
 };
