@@ -51,7 +51,7 @@ const Navbar = () => {
 
 
       <nav className="sticky top-0 z-50 bg-white shadow-lg shadow-blue/20 transition-shadow">
-        <div className="max-w-screen-xl mx-auto px-6 md:py-4 lg:py-0 flex justify-between items-center">
+        <div className="max-w-screen-xl mx-auto px-6 py-1 md:py-4 lg:py-0 flex justify-between items-center">
           {/* Logo and Text Container */}
           <NavLink to="/" className="flex items-center space-x-4">
             <img
