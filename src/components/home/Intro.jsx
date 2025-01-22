@@ -32,7 +32,7 @@ const Intro = () => {
           Candidate of Medical Sciences
           </span>
           <span className="bg-white text-blue-900 px-3 py-1 rounded-full text-sm">
-          surgeon
+          Surgeon
           </span>
         </div>
       </div>
