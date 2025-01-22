@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom'; // React Router for navigation
 import { Helmet } from 'react-helmet'; // Importing Helmet for SEO
+import blog5 from '../assets/blog5.jpeg';
 import blog6 from '../assets/blog6.jpeg';
 
 const Blog = () => {
@@ -39,7 +40,7 @@ const Blog = () => {
     },
     {
       title: 'RSMU Alumni Success Stories',
-      image: 'https://softamo.org/wp-content/uploads/2023/03/Rostov-State-Medical-University.jpg',
+      image: blog5,
       description: 'The alumni network of RSMU contributes significantly to society...',
       fullDescription: 'Our alumni have gone on to become leaders in the medical field...',
       date: '2025-01-05',
@@ -96,7 +97,7 @@ const Blog = () => {
       {/* Blog Introduction Paragraph */}
       <div className="px-6 py-10 max-w-7xl mx-auto text-center">
         <p className="lg:text-xl text-gray-700 mb-6">
-          Welcome to the official blog of RSMU University. Here, we share news,
+          Welcome to the blog of RSMU University. Here, we share news,
           insights, and advancements in the field of medical education. Explore
           the latest updates from our institution, including innovative teaching
           methods, global collaborations, and more.

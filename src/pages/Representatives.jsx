@@ -1,6 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom'; // Importing Link from React Router
+import res from "../assets/res.jpg";
 
 const Representatives = () => {
     return (
@@ -14,11 +15,11 @@ const Representatives = () => {
             </Helmet>
 
             {/* Top Banner Image */}
-            <div className="relative w-full lg:h-80">
+            <div className="relative w-full lg:h-[500px]">
                 <img
-                    src="https://rostgmu.net/images/representative-of-foreign-students.webp"
+                    src={res}
                     alt="RSMU University Representatives"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-fit"
                 />
             </div>
 

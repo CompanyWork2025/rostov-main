@@ -10,12 +10,12 @@ const FAQ = () => {
         {
             question: "Is the medium of instruction in English?",
             answer:
-                "Yes, many programs at Rostov State Medical University are taught in English, making it convenient for international students who may not be fluent in Russian.",
+                "Yes, General Medicine program at Rostov state medical university is taught in English, making it convenient for international students, and it fulfill their countries medical councils norms of studying Medical in Abroad.",
         },
         {
             question: "What are the admission requirements?",
             answer:
-                "Admission typically requires a high school diploma with science subjects like Biology and Chemistry, along with qualifying scores in entrance exams or interviews.",
+                "Higher secondary school certificate On the place of high school diploma",
         },
         {
             question: "Does the university provide hostel facilities?",
@@ -26,11 +26,6 @@ const FAQ = () => {
             question: "What are the tuition fees at Rostov State Medical University?",
             answer:
                 "Tuition fees vary by program, but they are generally affordable, making it an attractive option for international students seeking quality education in medicine.",
-        },
-        {
-            question: "Are scholarships available for international students?",
-            answer:
-                "Yes, the university offers a limited number of scholarships based on academic performance and financial need. Students are encouraged to check the eligibility criteria.",
         },
         {
             question: "What career opportunities are available after graduation?",

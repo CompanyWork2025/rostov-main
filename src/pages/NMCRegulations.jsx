@@ -8,19 +8,9 @@ const NMCRegulations = () => {
         "Students must meet the eligibility criteria set by the National Medical Commission (NMC), including passing 10+2 with a minimum of 50% in Physics, Chemistry, and Biology.",
     },
     {
-      title: "Language Requirements",
-      description:
-        "Students must provide proof of English proficiency if they intend to study in English-medium programs.",
-    },
-    {
       title: "Duration of the Course",
       description:
         "The MBBS program must be a minimum of 54 months (4.5 years), followed by a 12-month internship to meet NMC standards.",
-    },
-    {
-      title: "Internship Requirements",
-      description:
-        "The 12-month internship must be completed in a teaching hospital recognized by NMC.",
     },
     {
       title: "Foreign Medical Graduate Examination (FMGE)",

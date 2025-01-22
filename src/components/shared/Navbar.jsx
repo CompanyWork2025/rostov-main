@@ -23,7 +23,7 @@ const Navbar = () => {
   }, [location]);  // Dependency array listens to route changes
 
 
-  
+
   return (
     <>
       {/* Ticker Section with Breaking News */}
@@ -32,13 +32,18 @@ const Navbar = () => {
           {/* Moving Text on the left */}
           <div className="overflow-hidden w-[70%] animate-fadeIn">
             <p className="hidden md:block moving-text inline-block whitespace-nowrap pr-[100%] animate-ticker opacity-100">
-              <span className="text-red-400 text-shadow-yellow">Breaking News: </span>
-              New semester registrations are now open! Enroll today for a brighter future! Limited seats available, don't miss out on this opportunity! Admission deadline approaching soon. Apply today for a successful career ahead!
+              <span className="text-red-400 mr-2 bg-yellow-200 px-2 py-1 text-shadow-yellow font-bold rounded-md">
+                Breaking News:
+              </span>
+                Admissions are open for 2025, Registration process has started.  New semester registrations are now open! Enroll today for a brighter future! Limited seats available, don't miss out on this opportunity! Admission deadline approaching soon. Apply today for a successful career ahead!
             </p>
           </div>
 
           {/* Admission Helpline on the right */}
-          <p className="-ml-48 md:ml-auto">Admission Helpline: +91-7669533991</p>
+          <p className="text-green-500 bg-white px-2 py-1 font-semibold rounded-md -ml-48 md:ml-auto">
+            Admission Helpline: +91-7669533991
+          </p>
+
         </div>
       </div>
 

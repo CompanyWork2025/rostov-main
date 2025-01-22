@@ -1,5 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
+import banner from "../assets/banner-history.png";
 
 const History = () => {
   return (
@@ -15,7 +16,7 @@ const History = () => {
       {/* Top Banner Image */}
       <div className="relative w-full lg:h-96">
         <img
-          src="https://rostgmu.net/images/rostov-state-medical-university-history.webp"  // Replace with the correct image URL
+          src={banner}  // Replace with the correct image URL
           alt="RSMU University History"
           className="w-full h-full object-contain"
         />

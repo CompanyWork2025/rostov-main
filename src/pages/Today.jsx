@@ -1,6 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom'; // Importing Link from React Router
+import today from "../assets/today.jpg";
 
 const Today = () => {
   return (
@@ -16,7 +17,7 @@ const Today = () => {
       {/* Top Banner Image */}
       <div className="relative w-full lg:h-80">
         <img
-          src="https://www.shalomeducation.in/wp-content/uploads/2019/09/inner-banner71.jpg"
+          src={today}
           alt="RSMU University Today"
           className="w-full h-full object-cover"
         />
