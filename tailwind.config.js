@@ -7,7 +7,7 @@ module.exports = {
     extend: {
       // Animations
       animation: {
-        ticker: 'ticker 25s linear infinite', // Adjust speed of ticker
+        ticker: 'ticker 15s linear infinite', // Adjust speed of ticker
         fadeIn: 'fadeIn 1s ease-in', // Fade in effect
       },
       keyframes: {

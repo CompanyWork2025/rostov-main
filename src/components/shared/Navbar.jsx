@@ -31,14 +31,14 @@ const Navbar = () => {
         <div className="max-w-screen-xl mx-auto font-semibold px-6 flex items-center">
           {/* Moving Text on the left */}
           <div className="overflow-hidden w-[70%] animate-fadeIn">
-            <p className="moving-text inline-block whitespace-nowrap pr-[100%] animate-ticker opacity-100">
+            <p className="hidden md:block moving-text inline-block whitespace-nowrap pr-[100%] animate-ticker opacity-100">
               <span className="text-red-400 text-shadow-yellow">Breaking News: </span>
               New semester registrations are now open! Enroll today for a brighter future! Limited seats available, don't miss out on this opportunity! Admission deadline approaching soon. Apply today for a successful career ahead!
             </p>
           </div>
 
           {/* Admission Helpline on the right */}
-          <p className="ml-auto">Admission Helpline: +91-7669533991</p>
+          <p className="-ml-48 md:ml-auto">Admission Helpline: +91-7669533991</p>
         </div>
       </div>
 
