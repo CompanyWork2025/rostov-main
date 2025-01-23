@@ -71,6 +71,7 @@ const About = () => {
               <a
                 href={brochure} // Use the imported PDF file here
                 download="RSMU Brochure" // Suggested file name for downloading
+                alt="RSMU Brochure.pdf"
                 className="w-56 py-2 bg-green-600 hover:bg-blue-700 rounded-lg text-white text-lg font-semibold flex items-center justify-center"
               >
                 <FaFilePdf className="mr-2" /> {/* PDF Icon */}
