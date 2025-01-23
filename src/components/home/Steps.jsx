@@ -3,7 +3,7 @@ import React from 'react';
 const Steps = () => {
     return (
         <div
-            className="relative bg-cover bg-center h-auto z-10"
+            className="relative bg-cover bg-center mt-4 h-auto z-10"
             style={{
                 backgroundImage:
                     "url('https://images.unsplash.com/photo-1530293959042-0aac487c21e3?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bGlnaHQlMjBibHVlJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D')",
