@@ -133,7 +133,7 @@ const App = () => {
         <div>
           {/* Telephone Icon */}
           <a
-            href="tel:+79515173719"
+            href="tel:+917669533991"
             className="fixed bottom-20 left-6 w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-lg z-50"
           >
             <img
