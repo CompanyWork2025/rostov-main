@@ -196,7 +196,7 @@ const Navbar = () => {
                       isActive ? 'block py-2 px-4 font-bold text-[#306185] bg-gray-100' : 'block py-2 px-4 hover:bg-gray-200'
                     }
                   >
-                    Fee & Structure
+                    Fee Structure
                   </NavLink>
                   <NavLink
                     to="/blog"
@@ -461,7 +461,7 @@ const Navbar = () => {
                           : 'block py-2 px-4 hover:bg-gray-200'
                       }
                     >
-                      Fee & Structure
+                      Fee Structure
                     </NavLink>
                     <NavLink
                       to="/blog"
