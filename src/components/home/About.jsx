@@ -1,5 +1,4 @@
 import React from "react";
-import men from '../../assets/main.gif';
 import { Link } from "react-router-dom";
 import { FaFilePdf } from 'react-icons/fa'; // Import Font Awesome PDF icon
 
@@ -89,7 +88,7 @@ const About = () => {
           {/* Right image */}
           <div className="mt-8 lg:mt-0 lg:flex-shrink-0">
             <img
-              src={men}
+              src="https://png.pngtree.com/png-vector/20231214/ourmid/pngtree-visual-floor-to-ceiling-effect-3d-character-brown-haired-male-doctor-png-image_11336429.png"
               alt="Doctor illustration"
               className="w-full lg:w-[500px] lg:h-[800px] lg:-mt-24 lg:ml-4 h-auto object-contain mx-auto"
             />

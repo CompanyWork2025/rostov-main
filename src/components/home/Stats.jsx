@@ -67,26 +67,26 @@ function StatsGrid() {
         <div className="grid gap-8 w-full px-4 lg:px-14">
           {/* Row 1 */}
           <div className="flex flex-col lg:flex-row gap-4">
-            <div className="flex items-center bg-blue-700 text-white rounded-lg p-6 w-full lg:w-[60%]">
+            <div className="flex items-center bg-blue-700 text-white rounded-lg p-6 lg:p-0 w-full lg:w-[60%]">
               <div className="flex-1">
-                <h1 className="text-2xl lg:text-4xl font-bold">15 000+</h1>
-                <p className="mt-2 text-md lg:text-lg">students</p>
+                <h1 className="text-2xl lg:text-6xl lg:ml-4 font-bold">15 000+</h1>
+                <p className="mt-2 text-md lg:ml-6 lg:text-xl">students</p>
               </div>
               <img
                 src="https://www.pngarts.com/files/7/Group-College-Student-PNG-Image.png"
                 alt="Students"
-                className="w-1/3 lg:w-1/2"
+                className="w-3/4 lg:w-3/4 -mr-8 lg:-mr-10 mx-auto"
               />
             </div>
             <div className="flex items-center bg-blue-600 text-white rounded-lg p-6 w-full lg:w-[40%]">
               <div className="flex-1">
-                <h1 className="text-2xl lg:text-4xl font-bold">1300+</h1>
+                <h1 className="text-2xl lg:text-6xl font-bold">1300+</h1>
                 <p className="mt-2 text-md lg:text-lg">international students</p>
               </div>
               <img
                 src="https://png.pngtree.com/png-vector/20220725/ourmid/pngtree-happy-friends-group-gathering-png-image_6072378.png"
                 alt="International"
-                className="hidden lg:block w-1/3 lg:w-1/2"
+                className="hidden lg:block w-1/2 lg:w-3/2 lg:-mb-16"
               />
             </div>
           </div>
@@ -95,13 +95,13 @@ function StatsGrid() {
           <div className="flex flex-col lg:flex-row gap-4">
             <div className="flex items-center bg-red-500 text-white rounded-lg p-6 w-full lg:w-[40%]">
               <div className="flex-1">
-                <h1 className="text-2xl lg:text-4xl font-bold">64+</h1>
+                <h1 className="text-2xl lg:text-6xl font-bold">64+</h1>
                 <p className="mt-2 text-md lg:text-lg">countries</p>
               </div>
             </div>
             <div className="flex items-center bg-white text-gray-800 border rounded-lg p-6 w-full lg:w-[60%]">
               <div className="flex-1">
-                <h1 className="text-2xl lg:text-4xl font-bold">60+</h1>
+                <h1 className="text-2xl lg:text-6xl font-bold">60+</h1>
                 <p className="mt-2 text-md lg:text-lg">
                   More than 60 international partners
                 </p>
@@ -113,13 +113,13 @@ function StatsGrid() {
           <div className="flex flex-col lg:flex-row gap-4">
             <div className="flex items-center bg-blue-700 text-white rounded-lg p-6 w-full lg:w-[60%]">
               <div className="flex-1">
-                <h1 className="text-2xl lg:text-4xl font-bold">30+</h1>
+                <h1 className="text-2xl lg:text-6xl font-bold">30+</h1>
                 <p className="mt-2 text-md lg:text-lg">Joint Ph.D. programs</p>
               </div>
             </div>
             <div className="flex items-center bg-blue-900 text-white rounded-lg p-6 w-full lg:w-[40%]">
               <div className="flex-1">
-                <h1 className="text-2xl lg:text-4xl font-bold">300+</h1>
+                <h1 className="text-2xl lg:text-6xl font-bold">300+</h1>
                 <p className="mt-2 text-md lg:text-lg">
                   More than 300 students take part in exchange programs annually
                 </p>

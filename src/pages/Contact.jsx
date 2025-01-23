@@ -266,8 +266,9 @@ const ContactForm = () => {
         </div>
 
         {/* Google Map Display */}
-        <div className="w-full md:w-1/2 lg:p-24 flex justify-center">
-          <div className="rounded-lg overflow-hidden shadow-lg w-full h-96">
+        <div className="w-full mt-4 md:mt-0 md:w-1/2 lg:p-20 flex justify-center">
+          <div className="rounded-lg overflow-hidden w-full h-[550px]">
+            <h1 className='text-lg text-center text-[#306185] lg:text-left lg:text-xl font-semibold mb-10'>Our official representative registered address in India 👇🏻</h1>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3499.8652879979413!2d77.1475991755031!3d28.693676075631423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d03d92f45f1bb%3A0xf2fcd5bfa7590c08!2sThe%20RREC%20Team-MBBS%20in%20Russia%20%7C%20Direct%20Official%20Admission%20Partners%20%7C%20Top%20Medical%2C%20Technical%2C%20Federal%20Universities%20of%20Russia.!5e0!3m2!1sen!2sin!4v1737455159513!5m2!1sen!2sin"
               width="600"

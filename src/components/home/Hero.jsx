@@ -3,13 +3,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUp, faArrowDown } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 import { Helmet } from "react-helmet";
-import image1 from "../../assets/team.webp";
-import image2 from "../../assets/doctor.webp";
-import image3 from "../../assets/team2.webp";
+import main from "../../assets/main.png";
 
 const Hero = () => {
-  const images = [image1, image2, image3];
-  const [currentImage, setCurrentImage] = useState(0);
   const [isContentExpanded, setIsContentExpanded] = useState([false, false, false, false]);
 
   const toggleContent = (index) => {
@@ -18,18 +14,12 @@ const Hero = () => {
     setIsContentExpanded(updatedState);
   };
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentImage((prev) => (prev + 1) % images.length);
-    }, 3000);
-    return () => clearInterval(interval);
-  }, [images.length]);
 
   return (
     <>
       {/* SEO Meta Tags */}
       <Helmet>
-        <title>Rostov State Medical University - Admissions Open</title>
+        <title>Rostov State Medical University - Admissions Open 2025</title>
         <meta
           name="description"
           content="Rostov State Medical University offers world-class medical education. Admissions are now open for international students. Learn more about our programs and apply today."
@@ -118,9 +108,9 @@ const Hero = () => {
           {/* Dynamic Image Section */}
           <div className="w-full lg:w-1/2 flex justify-center mt-8 md:mt-0">
             <img
-              src={images[currentImage]}
-              alt={`Feature ${currentImage + 1}`}
-              className="max-w-xs lg:max-w-md transition duration-500"
+              src={main}
+              alt="university image"
+              className="max-w-xs lg:max-w-[600px] transition duration-500"
               loading="lazy"
             />
           </div>

@@ -28,8 +28,8 @@ const App = () => {
       <Rector />
       <Stats />
       <InternationalApplicants />
-      <Timeline />
       <Clients />
+      <Timeline />
       <Steps />
       <Contact />
     </>
