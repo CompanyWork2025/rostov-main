@@ -94,7 +94,7 @@ const App = () => {
       <Router>
       <Helmet>
           {/* Default Meta Title and Description */}
-          <title>Rostov State Medical University - Admission Open 2025</title>
+          <title>Rostov State Medical University - Admisisons are open for 2025</title>
           <meta
             name="description"
             content="Apply to Rostov State Medical University for the 2025 academic year! Offering world-class medical education, affordable fees, NMC-approved curriculum, and excellent facilities for international students."

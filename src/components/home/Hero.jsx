@@ -19,7 +19,7 @@ const Hero = () => {
     <>
       {/* SEO Meta Tags */}
       <Helmet>
-        <title>Rostov State Medical University - Admissions Open 2025</title>
+        <title>Rostov State Medical University - Admisisons are open for 2025</title>
         <meta
           name="description"
           content="Rostov State Medical University offers world-class medical education. Admissions are now open for international students. Learn more about our programs and apply today."
