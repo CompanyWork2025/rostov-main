@@ -1,13 +1,14 @@
 import React, { useState, useRef } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Helmet } from "react-helmet"; // Import Helmet
+import call from './assets/call.gif';
 import logo from "./assets/logo.png";
-import Navbar from "./components/shared/Navbar"; 
+import Navbar from "./components/shared/Navbar";
 import Home from "./pages/Home";
 import History from "./pages/History";
-import Today from "./pages/Today"; 
-import Gallery from "./pages/Gallery"; 
-import VideoGallery from "./pages/VideoGallery"; 
+import Today from "./pages/Today";
+import Gallery from "./pages/Gallery";
+import VideoGallery from "./pages/VideoGallery";
 import Blog from "./pages/Blog";
 import NMC from "./pages/NMCRegulations";
 import Updates from "./pages/Updates";
@@ -63,7 +64,7 @@ const App = () => {
   // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
-    
+
     if (!validateForm()) {
       // If the form validation fails, return and don't send the email.
       return;
@@ -92,7 +93,7 @@ const App = () => {
   return (
     <>
       <Router>
-      <Helmet>
+        <Helmet>
           {/* Default Meta Title and Description */}
           <title>Rostov State Medical University - Admisisons are open for 2025</title>
           <meta
@@ -129,18 +130,31 @@ const App = () => {
           </p>
         </div>
 
-        <a
-          href="https://wa.me/79515173719"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="fixed bottom-6 left-6 w-12 h-12 bg-green-500 rounded-full flex items-center justify-center shadow-lg z-50"
-        >
-          <img
-            src={app}
-            alt="WhatsApp"
-            className="w-12 h-12 object-contain"
-          />
-        </a>
+        <div>
+          {/* Telephone Icon */}
+          <a
+            href="tel:+79515173719"
+            className="fixed bottom-20 left-6 w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-lg z-50"
+          >
+            <img
+              src={call}
+              alt="Telephone Icon"
+              className="w-20 h-20 object-cover"
+            />
+          </a>
+
+
+          {/* WhatsApp Icon */}
+          <a
+            href="https://wa.me/79515173719"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="fixed bottom-6 left-6 w-12 h-12 bg-green-500 rounded-full flex items-center justify-center shadow-lg z-50"
+          >
+            <img src={app} alt="WhatsApp" className="w-12 h-12 object-contain" />
+          </a>
+        </div>
+
 
         {showPopup && (
           <div className="fixed inset-0 px-4 bg-gray-600 bg-opacity-50 flex items-center justify-center z-50">
