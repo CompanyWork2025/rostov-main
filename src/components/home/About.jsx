@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FaFilePdf } from 'react-icons/fa'; // Import Font Awesome PDF icon
+import brochure from '../../assets/Brochure.pdf';
 
 const About = () => {
   return (
@@ -68,8 +69,8 @@ const About = () => {
             <div className="flex justify-center lg:justify-start mt-8 space-x-4">
               {/* Download Button */}
               <a
-                href="/brochure.pdf"   // Path to the PDF file you want to download
-                download="RSMU_Brochure" // File name for downloading
+                href={brochure} // Use the imported PDF file here
+                download="RSMU_Brochure" // Suggested file name for downloading
                 className="w-56 py-2 bg-green-600 hover:bg-blue-700 rounded-lg text-white text-lg font-semibold flex items-center justify-center"
               >
                 <FaFilePdf className="mr-2" /> {/* PDF Icon */}
