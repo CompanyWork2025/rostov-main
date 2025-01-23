@@ -11,17 +11,17 @@ function StatsGrid() {
             <h1 className="text-2xl lg:text-4xl font-bold text-gray-800 mb-4 text-center lg:text-left">
               Facts about our university
             </h1>
-            <p className="text-sm lg:text-lg text-gray-600 text-center lg:text-left">
+            <p className="text-sm lg:text-lg text-gray-600 text-justify">
               Rostov State Medical University is one of the most renowned
               medical universities in Russia, offering a rich legacy of academic
               excellence and a high standard of medical education.
             </p>
-            <p className="text-sm lg:text-lg mt-4 text-gray-600 text-center lg:text-left">
+            <p className="text-sm lg:text-lg mt-4 text-gray-600 text-justify">
               At RostSMU, our faculty comprises leading experts in their fields,
               bringing a wealth of experience, knowledge, and dedication to
               education and research.
             </p>
-            <p className="text-sm lg:text-lg mt-4 text-gray-600 text-center lg:text-left">
+            <p className="text-sm lg:text-lg mt-4 text-gray-600 text-justify">
             The Rostov State Medical University is accredited by the Russian Health Ministry for education for the teaching of both Russian and overseas students.
             </p>
           </div>
@@ -70,7 +70,7 @@ function StatsGrid() {
             <div className="flex items-center bg-blue-700 text-white rounded-lg p-6 lg:p-0 w-full lg:w-[60%]">
               <div className="flex-1">
                 <h1 className="text-2xl lg:text-6xl lg:ml-4 font-bold">15 000+</h1>
-                <p className="mt-2 text-md lg:ml-6 lg:text-xl">students</p>
+                <p className="mt-2 text-md lg:ml-6 lg:text-xl">Students</p>
               </div>
               <img
                 src="https://www.pngarts.com/files/7/Group-College-Student-PNG-Image.png"
@@ -81,7 +81,7 @@ function StatsGrid() {
             <div className="flex items-center bg-blue-600 text-white rounded-lg p-6 w-full lg:w-[40%]">
               <div className="flex-1">
                 <h1 className="text-2xl lg:text-6xl font-bold">1300+</h1>
-                <p className="mt-2 text-md lg:text-lg">international students</p>
+                <p className="mt-2 text-md lg:text-lg">International students</p>
               </div>
               <img
                 src="https://png.pngtree.com/png-vector/20220725/ourmid/pngtree-happy-friends-group-gathering-png-image_6072378.png"
@@ -96,7 +96,7 @@ function StatsGrid() {
             <div className="flex items-center bg-red-500 text-white rounded-lg p-6 w-full lg:w-[40%]">
               <div className="flex-1">
                 <h1 className="text-2xl lg:text-6xl font-bold">64+</h1>
-                <p className="mt-2 text-md lg:text-lg">countries</p>
+                <p className="mt-2 text-md lg:text-lg">Countries</p>
               </div>
             </div>
             <div className="flex items-center bg-white text-gray-800 border rounded-lg p-6 w-full lg:w-[60%]">

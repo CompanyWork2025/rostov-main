@@ -127,7 +127,7 @@ const Hero = () => {
             >
               <h2 className="text-xl font-semibold text-red-500 mb-3">{title}</h2>
               <p
-                className={`text-gray-600 text-sm flex-grow overflow-hidden transition-all duration-500 ${isContentExpanded[index] ? 'max-h-full' : 'max-h-28'
+                className={`text-gray-600 text-sm flex-grow text-justify overflow-hidden transition-all duration-500 ${isContentExpanded[index] ? 'max-h-full' : 'max-h-28'
                   }`}
               >
                 {index === 0

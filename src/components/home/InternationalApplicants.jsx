@@ -8,7 +8,7 @@ const InternationalApplicants = () => {
         backgroundImage: `url('https://satyamevedu.co.in/wp-content/uploads/2023/04/WhatsApp-Image-2022-05-10-at-12.18.11-AM-1024x683.jpeg')`,
       }}
     >
-      <div className="bg-black bg-opacity-80 py-12">
+      <div className="bg-black bg-opacity-80 px-8 lg:px-0 py-12">
         <div className="container mx-auto max-w-5xl">
           {/* Heading */}
           <h1 className="text-xl lg:text-3xl font-bold mb-6 text-center">
@@ -23,7 +23,7 @@ const InternationalApplicants = () => {
 
           {/* Degree Programs */}
           <div className="bg-white rounded-lg p-4 lg:p-4 text-black shadow-lg">
-            <h2 className="text-xl font-semibold mb-8 text-center">
+            <h2 className="text-lg lg:text-xl font-semibold mb-8 text-center">
             The Faculty on Training Foreign Students and Postgraduates is in charge of international students training in the following specialist degree programs
             </h2>
             <ul className="list-disc list-inside space-y-2">

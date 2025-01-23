@@ -13,13 +13,13 @@ const About = () => {
         <div className="flex flex-col lg:flex-row items-center lg:items-start lg:space-x-8">
           {/* Left content */}
           <div className="flex-1">
-            <p className="text-gray-700 text-lg mb-6 text-center lg:text-left">
+            <p className="text-gray-700 space-x-4 text-lg mb-6 text-center lg:text-left ">
               Rostov State Medical University is not just an educational
               institution, it is your chance for a successful future in the world
               of medicine.
             </p>
 
-            <div className="text-gray-700 text-center lg:text-left space-y-4">
+            <div className="text-gray-700 text-center text-left text-justify space-y-4">
               <p className="text-lg px-4 lg:px-0">
                 RSMU is equipped with modern laboratories, simulation centers,
                 and training facilities that allow students to gain practical
