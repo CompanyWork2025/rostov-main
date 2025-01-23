@@ -9,6 +9,7 @@ import History from "./pages/History";
 import Today from "./pages/Today";
 import Gallery from "./pages/Gallery";
 import VideoGallery from "./pages/VideoGallery";
+import Fee from "./pages/Fee";
 import Blog from "./pages/Blog";
 import NMC from "./pages/NMCRegulations";
 import Updates from "./pages/Updates";
@@ -109,6 +110,7 @@ const App = () => {
           <Route path="/representatives" element={<Representatives />} />
           <Route path="/photo-gallery" element={<Gallery />} />
           <Route path="/video-gallery" element={<VideoGallery />} />
+          <Route path="/fee" element={<Fee />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/faqs" element={<FAQ />} />
           <Route path="/dormitories" element={<Dormi />} />

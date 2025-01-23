@@ -191,6 +191,14 @@ const Navbar = () => {
                   onMouseLeave={() => setIsResourcesDropdownOpen(false)}
                 >
                   <NavLink
+                    to="/fee"
+                    className={({ isActive }) =>
+                      isActive ? 'block py-2 px-4 font-bold text-[#306185] bg-gray-100' : 'block py-2 px-4 hover:bg-gray-200'
+                    }
+                  >
+                    Fee & Structure
+                  </NavLink>
+                  <NavLink
                     to="/blog"
                     className={({ isActive }) =>
                       isActive ? 'block py-2 px-4 font-bold text-[#306185] bg-gray-100' : 'block py-2 px-4 hover:bg-gray-200'
@@ -441,6 +449,20 @@ const Navbar = () => {
 
                 {isResourcesDropdownOpen && (
                   <div className="mt-2 w-full bg-white shadow-lg rounded-lg text-gray-800 mx-auto">
+                     <NavLink
+                      to="/fee"
+                      onClick={() => {
+                        setIsResourcesDropdownOpen(false); // Close the dropdown
+                        toggleMenu(); // Close the mobile menu
+                      }}
+                      className={({ isActive }) =>
+                        isActive
+                          ? 'block py-2 px-4 font-bold text-[#306185] bg-gray-100'
+                          : 'block py-2 px-4 hover:bg-gray-200'
+                      }
+                    >
+                      Fee & Structure
+                    </NavLink>
                     <NavLink
                       to="/blog"
                       onClick={() => {
