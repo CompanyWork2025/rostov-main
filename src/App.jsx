@@ -41,7 +41,7 @@ const App = () => {
   const openPopup = () => setShowPopup(true);
   const closePopup = () => setShowPopup(false);
 
-  // Handle form input changes
+  // Handle form input changes //
   const handleChange = (e) => {
     const { name, value } = e.target;
     setForm({
