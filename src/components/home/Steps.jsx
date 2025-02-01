@@ -160,7 +160,7 @@ const Steps = () => {
                     <div className="flex flex-col order-0 sm:order-1">
                         <h3 className="text-xl font-semibold mb-4">Step 7 — The procedure for passing a medical examination and mandatory fingerprinting</h3>
                         <p className="text-gray-600 text-sm sm:text-base">
-                        According to Federal Law No. 272-FZ of 01.01.2921, from December 29, 2021; foreign citizens who arrive in RF must go through ma edical examination and get report results within 90 days of his/her arrival to RF and also need to do mandatory Biometrics.
+                        According to Federal Law No. 272-FZ of 01.01.2921, from December 29, 2021; foreign citizens who arrive in RF must go through medical examination and get report results within 90 days of his/her arrival to RF and also need to do mandatory Biometrics.
                             <br /><br />
                             If you have any questions regarding the admission process, feel free to contact the university staff or student Rep. at any time.
                         </p>
