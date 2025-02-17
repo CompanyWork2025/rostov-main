@@ -72,19 +72,19 @@ const ContactForm = () => {
         <meta property="og:title" content="Contact Us | RSMU University" />
         <meta property="og:description" content="Get in touch with RSMU University for inquiries about admissions, programs, or services. We are here to assist you." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.rsmu-university.com/contact" />
+        <meta property="og:url" content="https://www.rostgmu.com/contact" />
         <meta property="og:image" content="https://example.com/contact-preview.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Contact Us | RSMU University" />
         <meta name="twitter:description" content="Contact RSMU University for any inquiries. Let us help you with admissions, campus life, and support." />
-        <link rel="canonical" href="https://www.rsmu-university.com/contact" />
+        <link rel="canonical" href="https://www.rostgmu.com/contact" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "ContactPage",
             name: "Contact Us - RSMU University",
             description: "Contact page for RSMU University to inquire about admissions, campus services, and academic programs.",
-            url: "https://www.rsmu-university.com/contact",
+            url: "https://www.rostgmu.com/contact",
             contactPoint: {
               "@type": "ContactPoint",
               telephone: "+1-800-555-5555",

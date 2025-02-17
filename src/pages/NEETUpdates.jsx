@@ -49,8 +49,8 @@ const NEETUpdates = () => {
           content="Get the latest NEET 2025 news, including exam schedules, webinars, mock tests, and updates for aspiring medical students."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://yourneetupdatesite.com" />
-        <meta property="og:image" content="https://yourneetupdatesite.com/static/images/neet-banner.jpg" />
+        <meta property="og:url" content="https://www.rostgmu.com" />
+        <meta property="og:image" content="https://www.rostgmu.com/static/images/neet-banner.jpg" />
         <meta property="og:locale" content="en_US" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <html lang="en" />
