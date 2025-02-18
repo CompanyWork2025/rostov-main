@@ -58,7 +58,7 @@ const Gallery = () => {
           property="og:description"
           content="Explore our gallery featuring stunning visuals of campus life, events, and cultural festivals at RSMU University."
         />
-        <meta property="og:image" content="https://www.rostgmu.com/share-image.png?v=2" />
+        <meta property="og:image" content="https://www.rostgmu.com/logo.png?v=2" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.rostgmu.com/gallery" />
         <meta name="twitter:card" content="summary_large_image" />
@@ -67,7 +67,7 @@ const Gallery = () => {
           name="twitter:description"
           content="Discover the vibrant campus life and student achievements through our photo gallery."
         />
-        <meta name="twitter:image" content="https://www.rostgmu.com/share-image.png?v=2" />
+        <meta name="twitter:image" content="https://www.rostgmu.com/logo.png?v=2" />
         <link rel="canonical" href="https://www.rostgmu.com/gallery" />
       </Helmet>
 

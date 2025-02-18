@@ -73,7 +73,7 @@ const ContactForm = () => {
         <meta property="og:description" content="Get in touch with RSMU University for inquiries about admissions, programs, or services. We are here to assist you." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.rostgmu.com/contact" />
-        <meta property="og:image" content="https://www.rostgmu.com/share-image.png?v=2" />
+        <meta property="og:image" content="https://www.rostgmu.com/logo.png?v=2" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Contact Us | RSMU University" />
         <meta name="twitter:description" content="Contact RSMU University for any inquiries. Let us help you with admissions, campus life, and support." />

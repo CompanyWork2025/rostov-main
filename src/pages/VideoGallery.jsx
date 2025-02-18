@@ -56,7 +56,7 @@ const VideoGallery = () => {
           property="og:description"
           content="Explore our video gallery featuring stunning visuals of campus life, events, and cultural festivals at RSMU University."
         />
-        <meta property="og:image" content="https://www.rostgmu.com/share-image.png?v=2" />
+        <meta property="og:image" content="https://www.rostgmu.com/logo.png?v=2" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.rsmu-university.com/gallery" />
         <meta name="twitter:card" content="summary_large_image" />
@@ -65,7 +65,7 @@ const VideoGallery = () => {
           name="twitter:description"
           content="Discover the vibrant campus life and student achievements through our YouTube video gallery."
         />
-        <meta name="twitter:image" content="https://www.rostgmu.com/share-image.png?v=2" />
+        <meta name="twitter:image" content="https://www.rostgmu.com/logo.png?v=2" />
         <link rel="canonical" href="https://www.rsmu-university.com/gallery" />
         <script type="application/ld+json">
           {JSON.stringify({

@@ -49,8 +49,8 @@ const Updates = () => {
           content="Explore the latest news and upcoming events at Rostov Medical University, the leading medical university in Russia."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.rostgmu.com/share-image.png?v=2s" />
-        <meta property="og:image" content="https://www.rostgmu.com/share-image.png?v=2" />
+        <meta property="og:url" content="https://www.rostgmu.com/logo.png?v=2" />
+        <meta property="og:image" content="https://www.rostgmu.com/logo.png?v=2" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <html lang="en" />
       </Helmet>
