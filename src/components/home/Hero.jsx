@@ -37,7 +37,7 @@ const Hero = () => {
           property="og:image"
           content="https://images.unsplash.com/photo-1530293959042-0aac487c21e3?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3"
         />
-        <meta property="og:url" content="https://rsmu.edu" />
+        <meta property="og:url" content="https://rostgmu.com/" />
         <meta name="twitter:card" content="summary_large_image" />
       </Helmet>
 
