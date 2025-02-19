@@ -7,7 +7,7 @@ export default defineConfig({
     react(),
     ViteSitemap({
       // Define the hostname (your site’s URL)
-      hostname: 'https://www.rostgmu.in/', // replace with your actual website URL
+      hostname: 'https://www.rostgmu.com/', // replace with your actual website URL
     }),
   ],
   base: '/', // Ensure the base path is set for a root deployment
