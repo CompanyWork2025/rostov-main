@@ -1,7 +1,6 @@
 import React, { useState, useRef } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Helmet } from "react-helmet"; // Import Helmet
-import call from './assets/call.gif';
 import logo from "./assets/logo.png";
 import Navbar from "./components/shared/Navbar";
 import Home from "./pages/Home";
@@ -18,7 +17,6 @@ import Dormi from "./pages/Dormitories";
 import NeetUpdates from "./pages/NEETUpdates";
 import Contact from "./pages/Contact";
 import Footer from "./components/shared/Footer";
-import app from './assets/whatsapp.gif';
 import Representatives from "./pages/Representatives";
 
 // Import the emailjs-com package
@@ -139,9 +137,9 @@ const App = () => {
             className="fixed bottom-20 left-6 w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-lg z-50"
           >
             <img
-              src={call}
+              src="https://cdn2.iconfinder.com/data/icons/email-58/65/57-512.png"
               alt="Telephone Icon"
-              className="w-20 h-20 object-cover"
+              className="w-20 h-20 lg:w-10 lg:h-10 object-contain"
             />
           </a>
 
@@ -153,7 +151,7 @@ const App = () => {
             rel="noopener noreferrer"
             className="fixed bottom-6 left-6 w-12 h-12 bg-green-500 rounded-full flex items-center justify-center shadow-lg z-50"
           >
-            <img src={app} alt="WhatsApp" className="w-12 h-12 object-contain" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1022px-WhatsApp.svg.png" alt="WhatsApp" className="w-12 h-12 object-contain" />
           </a>
         </div>
 
